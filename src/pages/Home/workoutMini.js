@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function workoutMini(workout) {
+export function WorkoutMini({ workout }) {
     return (
         <li className='Workouts__mini'>
             <span>{workout.name}</span>

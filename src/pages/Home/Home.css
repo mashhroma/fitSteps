@@ -15,6 +15,7 @@
     border-radius: 30px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     padding: 12px 0px;
     justify-content: center;
     gap: 24px;

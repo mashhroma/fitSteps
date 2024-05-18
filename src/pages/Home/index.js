@@ -4,11 +4,14 @@ import { BannerAbout } from "./BannerAbout";
 import { Top5workouts } from "./Top5workouts";
 import { SubscribeHome } from "./SubscribeHome";
 
-export function Home() {
+
+
+
+export function Home({ workouts }) {
     return (
         <div>
             <BannerAbout />
-            <Top5workouts />
+            <Top5workouts workouts={workouts} />
             <SubscribeHome />
         </div>
     )
