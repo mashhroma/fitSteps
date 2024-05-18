@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 30px;
+  background-color: rgba(67, 207, 238, 0.6431372549);
+}
+.menu__link {
+  list-style-type: none;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+}/*# sourceMappingURL=style.css.map */

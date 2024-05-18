@@ -1,0 +1,19 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  height: 150px;
+}
+
+.Login {
+  padding: 24px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(67, 207, 238, 0.6431372549);
+}/*# sourceMappingURL=style.css.map */
