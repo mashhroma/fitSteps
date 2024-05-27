@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ConfidentialPolicy() {
+export default function ConfidentialPolicy() {
     return (
         <section className="text">
             

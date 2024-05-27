@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function About() {
+export default function About() {
     return (
         <section className='text'>
             <p>Меня зовут Мария Савкина, мне 39 лет и я влюблена в фитнес и здоровый образ жизни. Эта любовь сподвигла меня на создание этой платформы.</p>

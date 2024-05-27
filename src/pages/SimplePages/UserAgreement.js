@@ -1,6 +1,6 @@
 import React from "react";
 
-export function UserAgreement() {
+export default function UserAgreement() {
     return (
         <section className="text">
             <h2>Пользовательское соглашение для сайта FitSteps.ru</h2>
