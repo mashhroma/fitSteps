@@ -19,7 +19,9 @@ export default function Footer() {
                     <li><Link to='/articles'>Статьи</Link></li>
                 </ul>
             </menu>
-            <div className="footer__date">2024</div>
+            <div className="footer__copyright">
+                <b>&copy; 2024 Это учебный проект Марии Савкиной</b><br />
+            Вся информация на сайте несет исключительно информационный характер и создана для имитации работающего сайта в рамках дипломного проекта по специализации Frontend React.</div>
         </footer>
     )
 }
