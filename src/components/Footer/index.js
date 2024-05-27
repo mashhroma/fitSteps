@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export function Footer() {
+export default function Footer() {
     return (
         <footer className="footer">
             <menu className="footer_menu">
