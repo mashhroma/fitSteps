@@ -268,6 +268,16 @@ main {
   padding: 24px 0px;
   color: $colorText;
   width: 70%;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+    padding-top: 24px;
+    padding-bottom: 18px;
+  }
   
   p, li {
     padding-bottom: 12px;
