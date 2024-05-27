@@ -16,6 +16,7 @@ import { ConfidentialPolicy } from './pages/SimplePages/ConfidentialPolicy';
 import { WorkoutDetails } from './pages/Workouts/WorkoutDetails';
 
 import workoutsData from './backend/workoutsData.json';
+import { ErrorPage } from './pages/SimplePages/ErrorPage404';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path='/coach_offer' element={<CoachOffer />} />
             <Route path='/user_agreement' element={<UserAgreement />} />
             <Route path='/confidential_policy' element={<ConfidentialPolicy />} />
+            <Route path='*' element={<ErrorPage />} />
           </Routes>
         </main>
         <Footer />
