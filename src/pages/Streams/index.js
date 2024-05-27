@@ -1,6 +1,6 @@
 import React from "react";
 
-export function AdminPage() {
+export function Streams() {
     return (
         <div>
             Любой текст

@@ -1,7 +1,4 @@
-import React from 'react';
-
-
-export function BannerAbout() {
+export default function BannerAbout() {
     return (
         <div className='Banner'>
             Присоединяйся к нам!

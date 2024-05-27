@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Discussions() {
+export function Articles() {
     return (
         <div>
             Любой текст

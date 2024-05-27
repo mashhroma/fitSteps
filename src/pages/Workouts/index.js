@@ -1,13 +1,13 @@
 import React from "react";
+import WorkoutPreview from "./WorkoutPreview";
 
 export function Workouts({ workouts }) {
     return (
-        <div>
-            {workouts.map(workout => <li key={workout.id}>
-                <span>{workout.name}</span>
-                <img className='Workouts__preview' src={workout.image} alt="Превью" />
-                <span>{workout.date} {workout.duration}</span>
-            </li>)}
-        </div>
+        <section>
+            <h1>Все занятия</h1>
+            <ul className='workouts'>
+                {workouts.map(workout => <WorkoutPreview workout={workout} />)}
+            </ul>
+        </section>
     )
 }
