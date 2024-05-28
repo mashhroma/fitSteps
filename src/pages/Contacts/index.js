@@ -1,7 +1,7 @@
 import React from 'react';
-import { ContactForm } from './ContactForm';
+import ContactForm from './ContactForm';
 
-export function Contacts() {
+export default function Contacts() {
     return (
         <section className='text'>
             <h3>Уважаемые посетители сайта!</h3>

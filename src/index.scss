@@ -3,16 +3,12 @@ $colorPink: #f79cdf;
 $colorGreen: #c5f581;
 $colorText: grey;
 $colorLightPink: #fdeaf8;
+$colorHoverPink: #e460bc;
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', system-ui;
 }
 
 a {
@@ -26,6 +22,23 @@ img {
 main {
   margin: 0px 3vw;
   flex: 1;
+}
+
+.button {
+  width: fit-content;
+  padding: 12px;
+  background-color: $colorPink;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  align-self: flex-end;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $colorHoverPink;
+    transform: scale(1.1);
+  }
 }
 
 .App{
@@ -56,16 +69,23 @@ main {
 
   .menu {
     display: flex;
-    gap: 24px;
-    padding: 12px 20px;
+    gap: 36px;
+    padding: 12px 36px;
     border-radius: 30px;
     background-color: $colorBlue;
   
     &__link {
       list-style-type: none;
       color: #fff;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: bolder;
+      text-transform: uppercase;
+      transition: 0.3s;
+
+      &:hover{
+        color: $colorLightPink;
+        transform: translateY(-1px)
+      }
     }
   }
 }
@@ -75,10 +95,21 @@ main {
   list-style-type: none;
   justify-content: space-between;
   background-color: $colorPink;
-  color: #fff;
   font-weight: 500;
   padding: 12px 3vw;
   margin: 0px;
+
+  &__link {
+    font-size: 18px;
+    transition: 0.5s;
+    a{
+      color: #fff;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }
 
 .subheader {
@@ -167,7 +198,7 @@ main {
   margin-bottom: 24px;
 
   &__title{
-    padding: 12px 24px;
+    padding: 24px;
     color: #fff;
   }
 
@@ -181,6 +212,7 @@ main {
   &__item{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 6px;
     border: solid 1px #fff;
     border-radius: 30px;
@@ -189,13 +221,18 @@ main {
   }
   
   &__preview{
-    width: 190px;
+    width: 230px;
   }
 
   &__all {
     color: #fff;
     padding: 24px;
     text-align: right;
+
+    a{
+      color: #fff;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -253,32 +290,6 @@ main {
   margin-bottom: 24px;
 }
 
-.workouts {
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    list-style-type: none;
-    width: 300px;
-    padding: 12px;
-    border: solid 1px #cecccc;
-    border-radius: 20px;
-    box-shadow: 0px 0px 6px #cecccc;
-    transition: .3s;
-
-    &:hover {
-      border: solid 1px $colorGreen;
-      box-shadow: 0px 0px 6px $colorGreen;
-    }
-  }
-}
-
 .text {
   color: $colorText;
   width: 70%;
@@ -319,7 +330,7 @@ main {
   gap: 12px;
   width: 50%;
   padding: 24px;
-  border: 1px solid #e6e1e1;
+  border: 2px solid #e6e1e1;
   border-radius: 20px;
 
   &__input {
@@ -335,5 +346,137 @@ main {
 
   textarea {
     height: 150px;
+  }
+}
+
+.breadcrumbs{
+padding: 24px 0px;
+color: $colorBlue;
+}
+
+.content{
+  display: flex;
+}
+
+.filter{
+  padding-top: 24px;
+  padding-right: 24px;
+  margin-right: 24px;
+  border-top: 1px solid $colorLightPink;
+  border-right: 1px solid $colorLightPink;
+  border-top-right-radius: 25px;
+  color: $colorText;
+  min-width: 250px;
+
+  &__title{
+    margin-bottom: 24px;
+  }
+
+  &__subtitle{
+    margin-bottom: 12px;
+  }
+
+  &__list{
+    list-style-type: none;
+  }
+
+  &__item{
+    border: 1px solid #cecccc;
+    border-radius: 15px;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    display: flex;
+    gap: 6px;
+
+    label{
+      width: 100%;;
+    }
+
+    &:hover{
+      background-color: $colorLightPink;
+    }
+
+    input[type=checkbox]:checked{
+      background-color: $colorPink;
+    }
+  }
+}
+
+.workouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+    padding: 12px;
+    width: 380px;
+    border: solid 1px #cecccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px #cecccc;
+    transition: .3s;
+    color: $colorText;
+
+    b{
+      font-size: 20px;
+      color: $colorPink;
+    }
+
+    &:hover {
+      border: solid 1px $colorGreen;
+      box-shadow: 0px 0px 6px $colorGreen;
+      transform: translateY(-5px)
+    }
+  }
+}
+
+.subscriptions{
+  display: flex;
+  justify-content: flex-start;
+  gap: 36px;
+  margin-top: 24px;
+  padding-left: 0px !important;
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 150px;
+    height: 200px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: $colorGreen;
+    box-shadow: 0px 0px 10px 0px $colorPink;
+    transition: 0.3s;
+
+    &:hover{
+      transform: scale(1.1);
+      filter: brightness(0.9);
+    }
+
+    .button{
+      align-self: auto;
+    }
+
+    h4{
+      font-size: 26px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 15px;
+      padding: 12px;
+    }
+
+    p{
+      font-size: 30px;
+      font-weight: 700;
+      color: $colorPink;
+      text-shadow: -2px 0 #fff;
+    }
   }
 }
