@@ -9,6 +9,7 @@ export default function Footer() {
                     <li><Link to='/about'>О платформе FitSteps.ru</Link></li>
                     <li><Link to='/contacts'>Контактная информация</Link></li>
                     <li><Link to='/subscriptions'>Оформить подписку</Link></li>
+                    <li><Link to='/coach_about'>Стать тренером</Link></li>
                     <li><Link to='/user_offer'>Оферта с пользователем</Link></li>
                     <li><Link to='/coach_offer'>Оферта с тренером</Link></li>
                     <li><Link to='/user_agreement'>Пользовательское соглашение</Link></li>

@@ -25,6 +25,7 @@ import { WorkoutDetails } from './pages/Workouts/WorkoutDetails';
 import workoutsData from './backend/workoutsData.json';
 import workoutTypes from './backend/workoutTypes.json';
 import PaymentPage from './pages/PaymentPage';
+import CoachAboutPage from './pages/SimplePages/CoachAboutPage';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/contacts' element={<Contacts />} />
             <Route path='/subscriptions' element={<Subscriptions />} />
+            <Route path='/coach_about' element={<CoachAboutPage />} />
             <Route path='/user_offer' element={<UserOffer />} />
             <Route path='/coach_offer' element={<CoachOffer />} />
             <Route path='/user_agreement' element={<UserAgreement />} />

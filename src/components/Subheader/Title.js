@@ -30,6 +30,9 @@ export default function Title() {
         case 'payment_subscription':
             title = 'Оплата подписки';
             break;
+        case 'coach_about':
+            title = 'Стать тренером';
+            break;
         case 'user_offer':
             title = 'Оферта с пользователем';
             break;
