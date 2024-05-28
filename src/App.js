@@ -24,6 +24,7 @@ import { WorkoutDetails } from './pages/Workouts/WorkoutDetails';
 
 import workoutsData from './backend/workoutsData.json';
 import workoutTypes from './backend/workoutTypes.json';
+import PaymentPage from './pages/PaymentPage';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
             <Route path='/coach_offer' element={<CoachOffer />} />
             <Route path='/user_agreement' element={<UserAgreement />} />
             <Route path='/confidential_policy' element={<ConfidentialPolicy />} />
+            <Route path='/payment_subscription/:subscribeType' element={<PaymentPage />} />
             <Route path='/email_confirm' element={<EmailConfirmPage />} />
             <Route path='*' element={<ErrorPage />} />
           </Routes>

@@ -1,6 +1,7 @@
 $colorBlue: #43cfeea4;
 $colorPink: #f79cdf;
 $colorGreen: #c5f581;
+$colorDarkGreen: #94d933;
 $colorText: grey;
 $colorLightPink: #fdeaf8;
 $colorHoverPink: #e460bc;
@@ -324,7 +325,7 @@ main {
   }
 }
 
-.contact {
+.form {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -342,6 +343,10 @@ main {
     &:hover {
       background-color: $colorLightPink;
     }
+  }
+
+  label{
+    padding-left: 6px;
   }
 
   textarea {
@@ -470,6 +475,7 @@ color: $colorBlue;
       border: 1px solid #fff;
       border-radius: 15px;
       padding: 12px;
+      background-color: $colorDarkGreen;
     }
 
     p{

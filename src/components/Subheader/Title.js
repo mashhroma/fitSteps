@@ -27,6 +27,9 @@ export default function Title() {
         case 'subscriptions':
             title = 'Подписки';
             break;
+        case 'payment_subscription':
+            title = 'Оплата подписки';
+            break;
         case 'user_offer':
             title = 'Оферта с пользователем';
             break;
