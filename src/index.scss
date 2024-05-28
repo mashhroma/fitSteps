@@ -356,8 +356,28 @@ main {
 }
 
 .breadcrumbs{
-padding: 24px 0px;
-color: $colorBlue;
+  display: flex;
+  padding-left: 6px;
+  list-style-type: none;
+  padding: 24px 0px;
+
+  a, li{
+    color: $colorBlue;
+  }
+
+  a:hover{
+    text-decoration: underline;
+    color: $colorPink;
+  }
+
+  li::after{
+    padding: 6px;
+    content: '/';
+  }
+
+  li:last-child::after{
+    content: '';
+  }
 }
 
 .content{

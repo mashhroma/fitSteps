@@ -1,29 +1,26 @@
 import React from "react";
 import WorkoutPreview from "./WorkoutPreview";
 import Filters from "./Filters";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Breadcrumbs from "../../components/breadcrumbs";
 
 export function Workouts({ workouts, types }) {
-    const {type} = useParams();
+    const {typePath} = useParams();
     let filteredWorkouts = [];
-    if (type) {
-        const filterTypes = type.split('+');
-        filterTypes.forEach(filterType => {
-            const currentWorkouts = workouts.filter(workout => workout.type === filterType);
-            filteredWorkouts = [...filteredWorkouts, ...currentWorkouts];
-        });
+    if (typePath) {
+        const type = types.find(type => type.path === typePath);
+        filteredWorkouts = workouts.filter(workout => workout.type === type.name);
     } else {
         filteredWorkouts = workouts;
     }
-    
 
     return (
         <section>
-            <h3 className="breadcrumbs"><Link to='/workouts'>Все занятия</Link></h3>
+            <Breadcrumbs types={types} />
             <div className="content">
                 <Filters types={types} />
                 <ul className='workouts'>
-                    {filteredWorkouts.map(workout => <WorkoutPreview workout={workout} />)}
+                    {filteredWorkouts.map(workout => <WorkoutPreview workout={workout} types={types} />)}
                 </ul>
             </div>
             

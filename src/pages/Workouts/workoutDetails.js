@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import Breadcrumbs from "../../components/breadcrumbs";
 
-export function WorkoutDetails({ workouts }) {
+export function WorkoutDetails({ workouts, types }) {
     const { id } = useParams();
     const workout = workouts.find(workout => workout.id === id);
 
@@ -11,6 +12,7 @@ export function WorkoutDetails({ workouts }) {
 
     return (
         <section>
+            <Breadcrumbs types={types} />
             <h1>{workout.name}</h1>
             <p>Дата начала: {workout.date}</p>
             <p>Продолжительность {workout.duration}</p>

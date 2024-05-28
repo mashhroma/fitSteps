@@ -38,8 +38,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Home workouts={workoutsData} />} />
             <Route path='/workouts' element={<Workouts workouts={workoutsData} types={workoutTypes} />} />
-            <Route path='/workouts/:type' element={<Workouts workouts={workoutsData} types={workoutTypes} />} />
-            <Route path='/workouts/all/:id' element={<WorkoutDetails workouts={workoutsData} />} />
+            <Route path='/workouts/:typePath' element={<Workouts workouts={workoutsData} types={workoutTypes} />} />
+            <Route path='/workouts/:typePath/:id' element={<WorkoutDetails workouts={workoutsData} types={workoutTypes} />} />
             <Route path='/streams' element={<Streams />} />
             <Route path='/articles' element={<Articles />} />
             <Route path='/about' element={<About />} />
