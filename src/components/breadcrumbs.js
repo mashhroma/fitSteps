@@ -1,11 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 
-export default function Breadcrumbs({types}) {
+export default function Breadcrumbs({items, types}) {
     const { pathname } = useLocation();
     const pathParts = pathname
                         .split('/')
                         .filter(part => part !== '');
-    console.log(pathParts);
     let link = '';
 
     return (
@@ -14,7 +13,6 @@ export default function Breadcrumbs({types}) {
                 pathParts.map((part, index) => {
                     link += ('/' + part);
                     let subtitle = '';
-                    console.log(pathParts);
                     if (index === 0) {
                         subtitle = 'Все';
                     }
@@ -22,9 +20,9 @@ export default function Breadcrumbs({types}) {
                         subtitle = types.find(type => type.path === part).name;
                     }
                     if (index > 1) {
-                        subtitle = part;
+                        subtitle = items.find(item => item.id === part).title;
                     }
-                    return <li><Link to={link}>{subtitle}</Link></li>
+                    return <li key={index}><Link to={link}>{subtitle}</Link></li>
                 })
             }
         </ul>

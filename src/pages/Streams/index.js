@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Streams() {
+export default function Streams() {
     return (
         <div>
             Любой текст

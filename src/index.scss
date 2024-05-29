@@ -43,7 +43,7 @@ main {
   }
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -54,7 +54,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 12px 3vw;
-  
+
   .Logo {
     height: 150px;
   }
@@ -75,7 +75,7 @@ main {
     padding: 12px 36px;
     border-radius: 30px;
     background-color: $colorBlue;
-  
+
     &__link {
       list-style-type: none;
       color: #fff;
@@ -84,7 +84,7 @@ main {
       text-transform: uppercase;
       transition: 0.3s;
 
-      &:hover{
+      &:hover {
         color: $colorLightPink;
         transform: translateY(-1px)
       }
@@ -104,7 +104,8 @@ main {
   &__link {
     font-size: 18px;
     transition: 0.5s;
-    a{
+
+    a {
       color: #fff;
     }
 
@@ -133,54 +134,54 @@ main {
     border-radius: 20px;
     padding: 6px 12px;
     height: fit-content;
-  
-      input {
-        border: none;
-        padding: 0px 12px;
-        margin-right: 6px;
-        color: #cecccc;
-        outline: none;
-      }
+
+    input {
+      border: none;
+      padding: 0px 12px;
+      margin-right: 6px;
+      color: #cecccc;
+      outline: none;
+    }
   }
 }
 
-.footer{
+.footer {
   padding: 32px 3vw;
   margin-top: 24px;
   background-color: $colorBlue;
   color: #fff;
 
-  &_menu{
+  &_menu {
     display: flex;
   }
-  
-  &_menu a{
+
+  &_menu a {
     color: #fff;
     font-weight: 400;
   }
-  
+
   &_menu li {
     list-style-type: none;
     padding-bottom: 10px;
   }
-  
-  &__menu-right{
+
+  &__menu-right {
     gap: 10px;
   }
-  
+
   &__copyright {
     padding-top: 24px;
     text-align: center;
     font-size: 14px;
 
-    b{
+    b {
       font-weight: 500;
       text-decoration: underline;
     }
   }
 }
 
-.Banner{
+.Banner {
   height: 300px;
   width: 100%;
   display: flex;
@@ -199,7 +200,7 @@ main {
   width: 100%;
   margin-bottom: 24px;
 
-  &__title{
+  &__title {
     padding: 24px;
     color: #fff;
   }
@@ -211,7 +212,7 @@ main {
     justify-content: space-between;
   }
 
-  &__item{
+  &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,8 +222,8 @@ main {
     padding: 12px;
     color: #fff;
   }
-  
-  &__preview{
+
+  &__preview {
     width: 230px;
   }
 
@@ -231,7 +232,7 @@ main {
     padding: 24px;
     text-align: right;
 
-    a{
+    a {
       color: #fff;
       text-decoration: underline;
     }
@@ -244,7 +245,7 @@ main {
   width: 100%;
   margin-bottom: 24px;
 
-  &__title{
+  &__title {
     padding: 12px 24px;
     color: #fff;
   }
@@ -256,7 +257,7 @@ main {
     justify-content: space-between;
   }
 
-  &__item{
+  &__item {
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -265,8 +266,8 @@ main {
     padding: 12px;
     color: #fff;
   }
-  
-  &__preview{
+
+  &__preview {
     width: 190px;
   }
 
@@ -277,7 +278,7 @@ main {
   }
 }
 
-.SubscribeHome{
+.SubscribeHome {
   height: 300px;
   width: 100%;
   display: flex;
@@ -305,8 +306,9 @@ main {
     padding-top: 24px;
     padding-bottom: 18px;
   }
-  
-  p, li {
+
+  p,
+  li {
     padding-bottom: 12px;
   }
 
@@ -314,12 +316,14 @@ main {
     padding-left: 36px;
     list-style-type: '✓  ';
   }
+
   li::marker {
     color: $colorPink;
   }
 
   a {
     color: $colorPink;
+
     &:hover {
       color: $colorBlue;
     }
@@ -346,7 +350,7 @@ main {
     }
   }
 
-  label{
+  label {
     padding-left: 6px;
   }
 
@@ -355,36 +359,37 @@ main {
   }
 }
 
-.breadcrumbs{
+.breadcrumbs {
   display: flex;
   padding-left: 6px;
-  list-style-type: none;
-  padding: 24px 0px;
+  list-style-type: none !important;
+  padding: 24px 0px !important;
 
-  a, li{
+  a,
+  li {
     color: $colorBlue;
   }
 
-  a:hover{
+  a:hover {
     text-decoration: underline;
     color: $colorPink;
   }
 
-  li::after{
+  li::after {
     padding: 6px;
     content: '/';
   }
 
-  li:last-child::after{
+  li:last-child::after {
     content: '';
   }
 }
 
-.content{
+.content {
   display: flex;
 }
 
-.filter{
+.filter {
   padding-top: 24px;
   padding-right: 24px;
   margin-right: 24px;
@@ -394,19 +399,19 @@ main {
   color: $colorText;
   min-width: 250px;
 
-  &__title{
+  &__title {
     margin-bottom: 24px;
   }
 
-  &__subtitle{
+  &__subtitle {
     margin-bottom: 12px;
   }
 
-  &__list{
+  &__list {
     list-style-type: none;
   }
 
-  &__item{
+  &__item {
     border: 1px solid #cecccc;
     border-radius: 15px;
     padding: 6px 12px;
@@ -414,15 +419,16 @@ main {
     display: flex;
     gap: 6px;
 
-    label{
-      width: 100%;;
+    label {
+      width: 100%;
+      ;
     }
 
-    &:hover{
+    &:hover {
       background-color: $colorLightPink;
     }
 
-    input[type=checkbox]:checked{
+    input[type=checkbox]:checked {
       background-color: $colorPink;
     }
   }
@@ -433,6 +439,46 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+
+  &__info {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__left {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  &__title {
+    background-color: $colorLightPink;
+    border-radius: 20px;
+    padding: 12px 24px;
+    margin-bottom: 36px;
+  }
+
+  &__block {
+    border: 1px solid #cecccc;
+    border-radius: 20px;
+    padding: 12px 24px;
+    margin-bottom: 12px;
+
+    h3 {
+      padding-top: 0px;
+    }
+  }
+
+  &__img {
+    margin: 24px 0px;
+    border-radius: 25px;
+  }
 
   &__item {
     display: flex;
@@ -447,7 +493,7 @@ main {
     transition: .3s;
     color: $colorText;
 
-    b{
+    b {
       font-size: 20px;
       color: $colorPink;
     }
@@ -460,14 +506,14 @@ main {
   }
 }
 
-.subscriptions{
+.subscriptions {
   display: flex;
   justify-content: flex-start;
   gap: 36px;
   margin-top: 24px;
   padding-left: 0px !important;
 
-  &__item{
+  &__item {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -481,16 +527,16 @@ main {
     box-shadow: 0px 0px 10px 0px $colorPink;
     transition: 0.3s;
 
-    &:hover{
+    &:hover {
       transform: scale(1.1);
       filter: brightness(0.9);
     }
 
-    .button{
+    .button {
       align-self: auto;
     }
 
-    h4{
+    h4 {
       font-size: 26px;
       color: #fff;
       border: 1px solid #fff;
@@ -499,7 +545,7 @@ main {
       background-color: $colorDarkGreen;
     }
 
-    p{
+    p {
       font-size: 30px;
       font-weight: 700;
       color: $colorPink;
@@ -508,22 +554,21 @@ main {
   }
 }
 
-.coach{
+.coach {
   border-radius: 30px;
   border: 1px solid $colorPink;
   padding: 24px;
   margin-top: 24px;
 
-  &__banner{
-    
+  &__banner {
+
     background-color: $colorDarkBlue;
     color: #fff;
     font-size: 20px;
   }
 
-  &__button{
+  &__button {
     text-align: center;
     background-color: $colorGreen;
   }
 }
-

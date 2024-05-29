@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { TypesContext } from '../../contexts/ContextProvider';
 
-export default function Submenu({workoutTypes}) {
+export default function Submenu() {
+    const workoutTypes = useContext(TypesContext);
+    console.log(workoutTypes);
+
     return (
         <nav>
             <ul className="submenu">

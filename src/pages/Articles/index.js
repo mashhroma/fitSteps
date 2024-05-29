@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Articles() {
+export default function Articles() {
     return (
         <div>
             Любой текст

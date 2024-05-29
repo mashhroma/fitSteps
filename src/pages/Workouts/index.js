@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import WorkoutPreview from "./WorkoutPreview";
 import Filters from "./Filters";
 import { useParams } from "react-router-dom";
 import Breadcrumbs from "../../components/breadcrumbs";
+import { TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
 
-export function Workouts({ workouts, types }) {
-    const {typePath} = useParams();
+export default function Workouts() {
+    const workouts = useContext(WorkoutsContext);
+    const types = useContext(TypesContext);
+    const { typePath } = useParams();
     let filteredWorkouts = [];
     if (typePath) {
         const type = types.find(type => type.path === typePath);
@@ -16,14 +19,14 @@ export function Workouts({ workouts, types }) {
 
     return (
         <section>
-            <Breadcrumbs types={types} />
+            <Breadcrumbs items={workouts} types={types} />
             <div className="content">
                 <Filters types={types} />
                 <ul className='workouts'>
                     {filteredWorkouts.map(workout => <WorkoutPreview workout={workout} types={types} />)}
                 </ul>
             </div>
-            
+
         </section>
     )
 }
