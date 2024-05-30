@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ContextProvider } from './contexts/ContextProvider';
+import { FormContext } from './contexts/FormContext';
 
 import Header from './components/Header';
 import Submenu from './components/Submenu';
@@ -24,42 +25,43 @@ import PaymentPage from './pages/PaymentPage';
 import CoachAboutPage from './pages/SimplePages/CoachAboutPage';
 import CoachPublicPage from './pages/CoachPublicPage';
 
+
 function App() {
   return (
-    <div className="App">
-      <ContextProvider>
-        <Router>
-          <Header />
-          <Submenu />
-          <Subheader />
-
-          <main>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/workouts' element={<Workouts />} />
-              <Route path='/workouts/:typePath' element={<Workouts />} />
-              <Route path='/workouts/:typePath/:id' element={<WorkoutDetails />} />
-              <Route path='/streams' element={<Streams />} />
-              <Route path='/articles' element={<Articles />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/contacts' element={<Contacts />} />
-              <Route path='/subscriptions' element={<Subscriptions />} />
-              <Route path='/coach_about' element={<CoachAboutPage />} />
-              <Route path='/coaches/:id' element={<CoachPublicPage />} />
-              <Route path='/user_offer' element={<UserOffer />} />
-              <Route path='/coach_offer' element={<CoachOffer />} />
-              <Route path='/user_agreement' element={<UserAgreement />} />
-              <Route path='/confidential_policy' element={<ConfidentialPolicy />} />
-              <Route path='/payment_subscription/:subscribeType' element={<PaymentPage />} />
-              <Route path='/email_confirm' element={<EmailConfirmPage />} />
-              <Route path='*' element={<ErrorPage />} />
-            </Routes>
-          </main>
-
-          <Footer />
-        </Router>
-      </ContextProvider>
-    </div>
+    <ContextProvider>
+      <FormContext>
+        <div className="App">
+          <Router>
+            <Header />
+            <Submenu />
+            <Subheader />
+            <main>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/workouts' element={<Workouts />} />
+                <Route path='/workouts/:typePath' element={<Workouts />} />
+                <Route path='/workouts/:typePath/:id' element={<WorkoutDetails />} />
+                <Route path='/streams' element={<Streams />} />
+                <Route path='/articles' element={<Articles />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/contacts' element={<Contacts />} />
+                <Route path='/subscriptions' element={<Subscriptions />} />
+                <Route path='/coach_about' element={<CoachAboutPage />} />
+                <Route path='/coaches/:id' element={<CoachPublicPage />} />
+                <Route path='/user_offer' element={<UserOffer />} />
+                <Route path='/coach_offer' element={<CoachOffer />} />
+                <Route path='/user_agreement' element={<UserAgreement />} />
+                <Route path='/confidential_policy' element={<ConfidentialPolicy />} />
+                <Route path='/payment_subscription/:subscribeType' element={<PaymentPage />} />
+                <Route path='/email_confirm' element={<EmailConfirmPage />} />
+                <Route path='*' element={<ErrorPage />} />
+              </Routes>
+            </main>
+            <Footer />
+          </Router>
+        </div>
+      </FormContext>
+    </ContextProvider>
   );
 }
 

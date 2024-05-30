@@ -18,7 +18,7 @@ export default function WorkoutPreview({ workout, types }) {
                     <span>{schedule}</span>
                 </div>
                 <span>Продолжительность: {workout.duration * 60} мин.</span>
-                <h4><Link to={`/coaches/${workout.coachId}`}>Тренер: {coach.name} {coach.surname}</Link></h4>
+                <h4>Тренер: <Link to={`/coaches/${workout.coachId}`}>{coach.name} {coach.surname}</Link></h4>
             </li>
         </Link>
     )

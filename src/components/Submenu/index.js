@@ -4,7 +4,6 @@ import { TypesContext } from '../../contexts/ContextProvider';
 
 export default function Submenu() {
     const workoutTypes = useContext(TypesContext);
-    console.log(workoutTypes);
 
     return (
         <nav>
