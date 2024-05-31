@@ -1,20 +1,18 @@
-import { redirect } from "react-router-dom";
-
-export default function Filters({types}) {
+export default function Filters({ types }) {
     let filteredPath = ['workouts/'];
 
-const filteredItem = (e) => {
-    if (e.target.checked) {
-        filteredPath.push(e.target.id);
-    }
-    if (!e.target.checked) {
-        filteredPath = filteredPath.filter(item => item !== e.target.id);
-    }
+    const filteredItem = (e) => {
+        if (e.target.checked) {
+            filteredPath.push(e.target.id);
+        }
+        if (!e.target.checked) {
+            filteredPath = filteredPath.filter(item => item !== e.target.id);
+        }
 
-    const filterMY = filteredPath.map((item, index)=> index > 1 ? '+' + item: item).join('');
-    console.log(filterMY);
-    // return redirect(filteredPath.join('+'));
-}
+        const filterMY = filteredPath.map((item, index) => index > 1 ? '+' + item : item).join('');
+        console.log(filterMY);
+        // return redirect(filteredPath.join('+'));
+    }
 
     return (
         <div className="filter">

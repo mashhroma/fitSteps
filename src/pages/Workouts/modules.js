@@ -1,5 +1,12 @@
-import weekDays from '../../backend/weekDays.json';
-import coaches from '../../backend/coaches.json';
+const weekDays = {
+    1: 'Понедельник',
+    2: 'Вторник',
+    3: 'Среда',
+    4: 'Четверг',
+    5: 'Пятница',
+    6: 'Суббота',
+    7: 'Воскресенье'
+};
 
 const getTypePath = (workout, types) => {
     return types.find(type => type.name === workout.type).path;
@@ -19,7 +26,7 @@ const getScheduleHTML = (workout) => {
     return scheduleItem;
 }
 
-const getCoach = (workout) => {
+const getCoach = (workout, coaches) => {
     return coaches.find(coach => coach.id === workout.coachId);
 }
 

@@ -1,0 +1,296 @@
+{
+    "workouts": [
+        {
+            "id": "101",
+            "title": "Женская сила",
+            "type": "Силовая тренировка",
+            "duration": "1",
+            "coachId": "1",
+            "schedule": "1 - 20.00, 3 - 21.00",
+            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "102",
+            "title": "Растяжка",
+            "type": "Стретчинг",
+            "duration": "2",
+            "coachId": "2",
+            "schedule": "2 - 20.00, 4 - 21.00",
+            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "103",
+            "title": "Йога с Шивой",
+            "type": "Йога",
+            "duration": "2",
+            "coachId": "3",
+            "schedule": "3 - 20.00, 5 - 21.00",
+            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "streamUrl": "some_url",
+            "recordUrl": ""
+        },
+        {
+            "id": "104",
+            "title": "Тренинг по пилатесу",
+            "type": "Пилатес",
+            "duration": "2",
+            "coachId": "4",
+            "schedule": "1 - 18.00, 4 - 17.00",
+            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": ""
+        },
+        {
+            "id": "105",
+            "title": "Час шейпинга",
+            "type": "Шейпинг",
+            "duration": "1",
+            "coachId": "2",
+            "schedule": "2 - 13.00, 5 - 13.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "106",
+            "title": "Вместе на тай-бо",
+            "type": "Тай-бо",
+            "duration": "1",
+            "coachId": "4",
+            "schedule": "1 - 20.00, 3 - 21.00",
+            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "107",
+            "title": "Танцуем латиноамериканские танцы",
+            "type": "Зумба",
+            "duration": "1",
+            "coachId": "1",
+            "schedule": "2 - 20.00, 4 - 21.00",
+            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "108",
+            "title": "Джем-степ",
+            "type": "Степ-аэробика",
+            "duration": "1",
+            "coachId": "3",
+            "schedule": "3 - 20.00, 5 - 21.00",
+            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "109",
+            "title": "Дэнсфит",
+            "type": "Пол-дэнс",
+            "duration": "1",
+            "coachId": "5",
+            "schedule": "1 - 18.00, 4 - 17.00",
+            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": ""
+        },
+        {
+            "id": "110",
+            "title": "Уличные тренировки",
+            "type": "Кроссфит",
+            "duration": "1",
+            "coachId": "4",
+            "schedule": "2 - 13.00, 5 - 13.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": ""
+        },
+        {
+            "id": "111",
+            "title": "Силовая тяга",
+            "type": "Силовая тренировка",
+            "duration": "1",
+            "coachId": "6",
+            "schedule": "1 - 20.00, 3 - 21.00",
+            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "112",
+            "title": "Растяжка для начинающих",
+            "type": "Стретчинг",
+            "duration": "2",
+            "coachId": "7",
+            "schedule": "2 - 20.00, 4 - 21.00",
+            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "113",
+            "title": "Абронихавма",
+            "type": "Йога",
+            "duration": "2",
+            "coachId": "7",
+            "schedule": "3 - 20.00, 5 - 21.00",
+            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "114",
+            "title": "Тренировка по пилатесу",
+            "type": "Пилатес",
+            "duration": "2",
+            "coachId": "8",
+            "schedule": "1 - 18.00, 4 - 17.00",
+            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "115",
+            "title": "Делаем попу",
+            "type": "Шейпинг",
+            "duration": "1",
+            "coachId": "9",
+            "schedule": "2 - 13.00, 5 - 13.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "116",
+            "title": "Борьба тай-бо",
+            "type": "Тай-бо",
+            "duration": "1",
+            "coachId": "9",
+            "schedule": "1 - 20.00, 3 - 21.00",
+            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "117",
+            "title": "Танцульки",
+            "type": "Зумба",
+            "duration": "1",
+            "coachId": "10",
+            "schedule": "2 - 20.00, 4 - 21.00",
+            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": ""
+        },
+        {
+            "id": "118",
+            "title": "Кардио тренировки",
+            "type": "Степ-аэробика",
+            "duration": "1",
+            "coachId": "8",
+            "schedule": "3 - 20.00, 5 - 21.00",
+            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "119",
+            "title": "Современные танцы",
+            "type": "Пол-дэнс",
+            "duration": "1",
+            "coachId": "5",
+            "schedule": "1 - 18.00, 4 - 17.00",
+            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        },
+        {
+            "id": "120",
+            "title": "Тренинг в лесу",
+            "type": "Кроссфит",
+            "duration": "1",
+            "coachId": "6",
+            "schedule": "2 - 13.00, 5 - 13.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url"
+        }
+    ],
+    "profiles": [
+        {
+            "id": "1",
+            "type": "coach",
+            "name": "Тихон",
+            "patronymic": "Константинович",
+            "surname": "Панин"
+        },
+        {
+            "id": "2",
+            "type": "coach",
+            "name": "Максим",
+            "patronymic": "Станиславович",
+            "surname": "Овсянников"
+        },
+        {
+            "id": "3",
+            "type": "coach",
+            "name": "Роман",
+            "patronymic": "Романович",
+            "surname": "Романов"
+        },
+        {
+            "id": "4",
+            "type": "coach",
+            "name": "Анна",
+            "patronymic": "Марковна",
+            "surname": "Молчанова"
+        },
+        {
+            "id": "5",
+            "type": "coach",
+            "name": "Алиса",
+            "patronymic": "Кирилловна",
+            "surname": "Сомова"
+        },
+        {
+            "id": "6",
+            "type": "coach",
+            "name": "Артём",
+            "patronymic": "Константинович",
+            "surname": "Соколов"
+        },
+        {
+            "id": "7",
+            "type": "coach",
+            "name": "Марк",
+            "patronymic": "Дмитриевич",
+            "surname": "Смирнов"
+        },
+        {
+            "id": "8",
+            "type": "coach",
+            "name": "Степан",
+            "patronymic": "Александрович",
+            "surname": "Воронцов"
+        },
+        {
+            "id": "9",
+            "type": "coach",
+            "name": "Максим",
+            "patronymic": "Иванович",
+            "surname": "Селиванов"
+        },
+        {
+            "id": "10",
+            "type": "coach",
+            "name": "Егор",
+            "patronymic": "Львович",
+            "surname": "Ефремов"
+        }
+    ]
+}

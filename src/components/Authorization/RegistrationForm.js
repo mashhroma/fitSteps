@@ -1,14 +1,7 @@
-import { useState } from "react";
 import { getUserDataFromForm, isFormCorrect, setErrorMessageVisibility } from "./modules";
+import axios from "axios";
 
 export default function RegistrationForm() {
-    const [users, setUsers] = useState([]);
-
-    const addUser = (user) => {
-        setUsers(users => [...users, user]);
-        console.log(users);
-    }
-
     const createUser = (e) => {
         e.preventDefault();
         const { elements } = e.target.parentElement;
@@ -18,7 +11,8 @@ export default function RegistrationForm() {
 
         if (trueForm) {
             const newUser = getUserDataFromForm(elements);
-            addUser(newUser);
+            axios.post(`https://66598df5de346625136ceaa4.mockapi.io/profiles/`, newUser);
+
         }
     }
 

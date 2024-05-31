@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { getCoach, getScheduleHTML, getTypePath } from "./modules";
 
-export default function WorkoutPreview({ workout, types }) {
+export default function WorkoutPreview({ workout, types, coaches }) {
     const typePath = getTypePath(workout, types);
     const schedule = getScheduleHTML(workout);
-    const coach = getCoach(workout);
+    const coach = getCoach(workout, coaches);
 
     return (
         <Link to={`/workouts/${typePath}/${workout.id}`}>

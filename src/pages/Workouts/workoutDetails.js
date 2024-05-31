@@ -3,16 +3,17 @@ import { useParams, Link } from "react-router-dom";
 
 import Breadcrumbs from "../../components/breadcrumbs";
 import { getCoach, getDescription, getScheduleHTML, getClosestStreamDate } from "./modules";
-import { TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
+import { ProfilesContext, TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
 
 export default function WorkoutDetails() {
     const workouts = useContext(WorkoutsContext);
     const types = useContext(TypesContext);
+    const coaches = useContext(ProfilesContext);
 
     const { id } = useParams();
     const workout = workouts.find(workout => workout.id === id);
     const schedule = getScheduleHTML(workout);
-    const coach = getCoach(workout);
+    const coach = getCoach(workout, coaches);
     const description = getDescription(workout, types);
     const streamDate = getClosestStreamDate(workout);
 
