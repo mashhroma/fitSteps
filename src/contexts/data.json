@@ -224,73 +224,102 @@
     "profiles": [
         {
             "id": "1",
-            "type": "coach",
+            "role": "coach",
             "name": "Тихон",
             "patronymic": "Константинович",
-            "surname": "Панин"
+            "surname": "Панин",
+            "email": "panin@mail.ru",
+            "password": "12345"
         },
         {
             "id": "2",
-            "type": "coach",
+            "role": "coach",
             "name": "Максим",
             "patronymic": "Станиславович",
-            "surname": "Овсянников"
+            "surname": "Овсянников",
+            "email": "ocsyannikov@mail.ru",
+            "password": "12345"
         },
         {
             "id": "3",
-            "type": "coach",
+            "role": "coach",
             "name": "Роман",
             "patronymic": "Романович",
-            "surname": "Романов"
+            "surname": "Романов",
+            "email": "romanov@mail.ru",
+            "password": "12345"
         },
         {
             "id": "4",
-            "type": "coach",
+            "role": "coach",
             "name": "Анна",
             "patronymic": "Марковна",
-            "surname": "Молчанова"
+            "surname": "Молчанова",
+            "email": "molchanova@mail.ru",
+            "password": "12345"
         },
         {
             "id": "5",
-            "type": "coach",
+            "role": "coach",
             "name": "Алиса",
             "patronymic": "Кирилловна",
-            "surname": "Сомова"
+            "surname": "Сомова",
+            "email": "somova@mail.ru",
+            "password": "12345"
         },
         {
             "id": "6",
-            "type": "coach",
+            "role": "coach",
             "name": "Артём",
             "patronymic": "Константинович",
-            "surname": "Соколов"
+            "surname": "Соколов",
+            "email": "sokolov@mail.ru",
+            "password": "12345"
         },
         {
             "id": "7",
-            "type": "coach",
+            "role": "coach",
             "name": "Марк",
             "patronymic": "Дмитриевич",
-            "surname": "Смирнов"
+            "surname": "Смирнов",
+            "email": "smirnov@mail.ru",
+            "password": "12345"
         },
         {
             "id": "8",
-            "type": "coach",
+            "role": "coach",
             "name": "Степан",
             "patronymic": "Александрович",
-            "surname": "Воронцов"
+            "surname": "Воронцов",
+            "email": "vorontsov@mail.ru",
+            "password": "12345"
         },
         {
             "id": "9",
-            "type": "coach",
+            "role": "coach",
             "name": "Максим",
             "patronymic": "Иванович",
-            "surname": "Селиванов"
+            "surname": "Селиванов",
+            "email": "selivanov@mail.ru",
+            "password": "12345"
         },
         {
             "id": "10",
-            "type": "coach",
+            "role": "coach",
             "name": "Егор",
             "patronymic": "Львович",
-            "surname": "Ефремов"
+            "surname": "Ефремов",
+            "email": "efremov@mail.ru",
+            "password": "12345"
+        },
+        {
+            "id": "11",
+            "role": "user",
+            "name": "Мария",
+            "patronymic": "Александровна",
+            "surname": "Савкина",
+            "email": "mashh@mail.ru",
+            "password": "12345"
         }
     ]
 }

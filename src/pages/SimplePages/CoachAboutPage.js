@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function CoachAboutPage() {
+export default function CoachAboutPage({ toggleCoachRegForm }) {
     return (
         <section className="text">
             <form className="form" action="#">
@@ -20,7 +20,7 @@ export default function CoachAboutPage() {
                 </ul>
                 <p>Подробная информация указана в <Link to='/coach_offer'>договоре оферты с тренерами</Link>.</p>
             </div>
-            <div className="coach coach__button"><button className="button">Зарегистрируйся и стань тренером!</button></div>
+            <div className="coach coach__button"><button className="button" onClick={toggleCoachRegForm}>Зарегистрируйся и стань тренером!</button></div>
             <div className="coach coach__conditions">
                 <h3>Требования к тренерам:</h3>
                 <ul>
@@ -28,7 +28,7 @@ export default function CoachAboutPage() {
                     <li>Необходимо быть зарегистрированным как самозанятый или быть индивидуальным предпринимателем.</li>
                     <li>Наличие технической возможности проводить онлайн-трансляции (компьютер, видеокамера, микрофон, интернет и т.п.)</li>
                 </ul>
-            </div>            
+            </div>
             <div className="coach coach___todo">
                 <h3>Чтобы стать тренером достаточно сделать несколько простых шагов:</h3>
                 <ul>
