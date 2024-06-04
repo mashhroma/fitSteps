@@ -2,11 +2,11 @@ import React, { useContext } from "react";
 import WorkoutPreview from "./WorkoutPreview";
 import Filters from "./Filters";
 import { useParams } from "react-router-dom";
-import Breadcrumbs from "../../components/breadcrumbs";
-import { ProfilesContext, TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import { ProfilesContext, TypesContext, DataContext } from "../../contexts/ContextProvider";
 
 export default function Workouts() {
-    const workouts = useContext(WorkoutsContext);
+    const { workouts } = useContext(DataContext);
     const types = useContext(TypesContext);
     const profiles = useContext(ProfilesContext);
     const { typePath } = useParams();

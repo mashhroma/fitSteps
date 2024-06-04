@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 
-import Breadcrumbs from "../../components/breadcrumbs";
+import Breadcrumbs from "../../components/Breadcrumbs";
 import { getCoach, getDescription, getScheduleHTML, getClosestStreamDate, renderFavorite, toggleFavorite } from '../../modules/workoutsFunctions';
-import { ActiveUserContext, ProfilesContext, TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
+import { ActiveUserContext, ProfilesContext, TypesContext, DataContext } from "../../contexts/ContextProvider";
 
 export default function WorkoutDetails() {
     const { id } = useParams();
@@ -13,7 +13,7 @@ export default function WorkoutDetails() {
     const profiles = useContext(ProfilesContext);
     const [activeUser, editActiveUser] = useContext(ActiveUserContext);
 
-    const workouts = useContext(WorkoutsContext);
+    const { workouts } = useContext(DataContext);
     const workout = workouts.find(workout => workout.id === id);
     const schedule = getScheduleHTML(workout);
     const coach = getCoach(workout, profiles);

@@ -3,10 +3,10 @@ import Top5Items from "./Top5Items";
 import SubscribeHome from "./SubscribeHome";
 import Top3Articles from "./Top3Articles";
 import { useContext } from "react";
-import { WorkoutsContext } from "../../contexts/ContextProvider";
+import { DataContext } from "../../contexts/ContextProvider";
 
 export default function Home() {
-    const workouts = useContext(WorkoutsContext);
+    const { workouts } = useContext(DataContext);
 
     return (
         <div>

@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
-import { ProfilesContext, WorkoutsContext } from "../../contexts/ContextProvider";
+import { ProfilesContext, DataContext } from "../../contexts/ContextProvider";
 
 export default function CoachPublicPage() {
-    const workouts = useContext(WorkoutsContext);
+    const { workouts } = useContext(DataContext);
     const coaches = useContext(ProfilesContext);
 
     const { id } = useParams();

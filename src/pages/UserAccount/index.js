@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { ActiveUserContext, TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
+import { ActiveUserContext, TypesContext, DataContext } from "../../contexts/ContextProvider";
 import { Link } from "react-router-dom";
 import WorkoutListItem from "./WorkoutListItem";
 
 export function UserAccount() {
     const types = useContext(TypesContext);
-    const workouts = useContext(WorkoutsContext);
+    const { workouts } = useContext(DataContext);
     const [activeUser] = useContext(ActiveUserContext);
 
     const myWorks = activeUser.favorites.map(favorite => workouts.find(workout => +workout.id === favorite));

@@ -27,6 +27,7 @@ import CoachPublicPage from './pages/CoachPublicPage';
 import RegistrationForm from './components/Authorization/RegistrationForm';
 import LoginForm from './components/Authorization/LoginForm';
 import { UserAccount } from './pages/UserAccount';
+import StreamsDetails from './pages/Streams/StreamsDetails';
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
               <Route path='/workouts/:typePath' element={<Workouts />} />
               <Route path='/workouts/:typePath/:id' element={<WorkoutDetails />} />
               <Route path='/streams' element={<Streams />} />
+              <Route path='/streams/:id' element={<StreamsDetails />} />
               <Route path='/articles' element={<Articles />} />
               <Route path='/about' element={<About />} />
               <Route path='/contacts' element={<Contacts />} />

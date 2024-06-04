@@ -9,7 +9,7 @@ const weekDays = {
 };
 
 const getTypePath = (workout, types) => {
-    return types.find(type => type.name === workout.type).path;
+    return types.find(currType => currType.name === workout.type).path;
 }
 
 const getScheduleHTML = (workout) => {
@@ -26,8 +26,8 @@ const getScheduleHTML = (workout) => {
     return scheduleItem;
 }
 
-const getCoach = (workout, coaches) => {
-    return coaches.find(coach => coach.id === workout.coachId);
+const getCoach = (dataItem, profiles) => {
+    return profiles.find(profile => profile.id === dataItem.coachId);
 }
 
 const getDescription = (workout, types) => {
@@ -71,14 +71,14 @@ const renderFavorite = (activeUser, workoutId) => {
     return <img width={30} height={30} src={isFavorite(activeUser, workoutId) ? '/images/favorite.svg' : '/images/unfavorite.svg'} alt="Добавить или удалить из избранного" />
 }
 
-const toggleFavorite = (activeUser, workoutId) => {
+const toggleFavorite = (activeUser, dataItemId) => {
     const editedUser = activeUser;
     if (activeUser) {
         let newFavorites = [];
-        if (isFavorite(activeUser, workoutId)) {
-            newFavorites = activeUser.favorites.filter(favorite => favorite !== +workoutId);
+        if (isFavorite(activeUser, dataItemId)) {
+            newFavorites = activeUser.favorites.filter(favorite => favorite !== +dataItemId);
         } else {
-            newFavorites = [...activeUser.favorites, +workoutId]
+            newFavorites = [...activeUser.favorites, +dataItemId]
         }
         editedUser.favorites = newFavorites;
     }

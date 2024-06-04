@@ -3,7 +3,6 @@ import { ActiveUserContext, ProfilesContext } from "../../contexts/ContextProvid
 import { Link } from "react-router-dom";
 
 export default function Authorization({ toggleUserRegForm, toggleUserLoginForm }) {
-    const users = useContext(ProfilesContext);
     const [activeUser, setActiveUser] = useContext(ActiveUserContext);
 
     const removeActiveUser = () => {
