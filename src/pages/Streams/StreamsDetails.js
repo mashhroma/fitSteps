@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
-import { getCoach, getDescription, getScheduleHTML, getClosestStreamDate, renderFavorite, toggleFavorite } from '../../modules/workoutsFunctions';
-import { ActiveUserContext, ProfilesContext, TypesContext, DataContext } from "../../contexts/ContextProvider";
+import { getCoach, renderFavorite, toggleFavorite } from '../../modules/workoutsFunctions';
+import { ActiveUserContext, ProfilesContext, DataContext } from "../../contexts/ContextProvider";
 
 export default function StreamsDetails() {
     const { id } = useParams();
@@ -35,7 +35,7 @@ export default function StreamsDetails() {
         <section className="text">
             <Breadcrumbs items={streams} />
 
-            <h1 className="workouts__title">Курс занятий: "{stream.title}"</h1>
+            <h1 className="workouts__title">Вебинар: "{stream.title}"</h1>
             <div className="favorite-details" onClick={handleFavorite}>
                 {favoriteIcon}
             </div>
@@ -53,7 +53,7 @@ export default function StreamsDetails() {
             <div className="workouts__block">Ссылка на ближайшее онлайн-занятие: {stream.streamUrl}</div>
 
             <img className="workouts__img" src={stream.image} alt="Превью" />
-            <div className="workouts__block"><Link to='/workouts'>К занятиям</Link></div>
+            <div className="workouts__block"><Link to='/streams'>К вебинарам</Link></div>
         </section>
     )
 }
