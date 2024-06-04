@@ -33,7 +33,13 @@ export default function Title() {
         case 'coach_about':
             title = 'Стать тренером';
             break;
+        case 'users':
+            title = 'Страница пользователя';
+            break;
         case 'coaches':
+            title = 'Страница тренера';
+            break;
+        case 'public_coaches':
             title = 'Тренер платформы';
             break;
         case 'user_offer':

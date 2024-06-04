@@ -2,6 +2,7 @@
     "workouts": [
         {
             "id": "101",
+            "category": "workout",
             "title": "Женская сила",
             "type": "Силовая тренировка",
             "duration": "1",
@@ -13,6 +14,7 @@
         },
         {
             "id": "102",
+            "category": "workout",
             "title": "Растяжка",
             "type": "Стретчинг",
             "duration": "2",
@@ -24,6 +26,7 @@
         },
         {
             "id": "103",
+            "category": "workout",
             "title": "Йога с Шивой",
             "type": "Йога",
             "duration": "2",
@@ -35,6 +38,7 @@
         },
         {
             "id": "104",
+            "category": "workout",
             "title": "Тренинг по пилатесу",
             "type": "Пилатес",
             "duration": "2",
@@ -46,6 +50,7 @@
         },
         {
             "id": "105",
+            "category": "workout",
             "title": "Час шейпинга",
             "type": "Шейпинг",
             "duration": "1",
@@ -57,6 +62,7 @@
         },
         {
             "id": "106",
+            "category": "workout",
             "title": "Вместе на тай-бо",
             "type": "Тай-бо",
             "duration": "1",
@@ -68,6 +74,7 @@
         },
         {
             "id": "107",
+            "category": "workout",
             "title": "Танцуем латиноамериканские танцы",
             "type": "Зумба",
             "duration": "1",
@@ -79,6 +86,7 @@
         },
         {
             "id": "108",
+            "category": "workout",
             "title": "Джем-степ",
             "type": "Степ-аэробика",
             "duration": "1",
@@ -90,6 +98,7 @@
         },
         {
             "id": "109",
+            "category": "workout",
             "title": "Дэнсфит",
             "type": "Пол-дэнс",
             "duration": "1",
@@ -101,6 +110,7 @@
         },
         {
             "id": "110",
+            "category": "workout",
             "title": "Уличные тренировки",
             "type": "Кроссфит",
             "duration": "1",
@@ -112,6 +122,7 @@
         },
         {
             "id": "111",
+            "category": "workout",
             "title": "Силовая тяга",
             "type": "Силовая тренировка",
             "duration": "1",
@@ -123,6 +134,7 @@
         },
         {
             "id": "112",
+            "category": "workout",
             "title": "Растяжка для начинающих",
             "type": "Стретчинг",
             "duration": "2",
@@ -134,6 +146,7 @@
         },
         {
             "id": "113",
+            "category": "workout",
             "title": "Абронихавма",
             "type": "Йога",
             "duration": "2",
@@ -145,6 +158,7 @@
         },
         {
             "id": "114",
+            "category": "workout",
             "title": "Тренировка по пилатесу",
             "type": "Пилатес",
             "duration": "2",
@@ -156,6 +170,7 @@
         },
         {
             "id": "115",
+            "category": "workout",
             "title": "Делаем попу",
             "type": "Шейпинг",
             "duration": "1",
@@ -167,6 +182,7 @@
         },
         {
             "id": "116",
+            "category": "workout",
             "title": "Борьба тай-бо",
             "type": "Тай-бо",
             "duration": "1",
@@ -178,6 +194,7 @@
         },
         {
             "id": "117",
+            "category": "workout",
             "title": "Танцульки",
             "type": "Зумба",
             "duration": "1",
@@ -189,6 +206,7 @@
         },
         {
             "id": "118",
+            "category": "workout",
             "title": "Кардио тренировки",
             "type": "Степ-аэробика",
             "duration": "1",
@@ -200,6 +218,7 @@
         },
         {
             "id": "119",
+            "category": "workout",
             "title": "Современные танцы",
             "type": "Пол-дэнс",
             "duration": "1",
@@ -211,6 +230,7 @@
         },
         {
             "id": "120",
+            "category": "workout",
             "title": "Тренинг в лесу",
             "type": "Кроссфит",
             "duration": "1",
@@ -219,6 +239,126 @@
             "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
+        },
+        {
+            "id": "121",
+            "category": "stream",
+            "title": "Вебинар по кроссфиту",
+            "duration": "1",
+            "coachId": "6",
+            "date": "25.06.2024 - 20.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "122",
+            "category": "stream",
+            "title": "Правильное питание",
+            "duration": "1",
+            "coachId": "2",
+            "date": "23.06.2024 - 19.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "123",
+            "category": "stream",
+            "title": "Худеем дома",
+            "duration": "2",
+            "coachId": "7",
+            "date": "26.06.2024 - 21.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "124",
+            "category": "stream",
+            "title": "Фитнес при беременности",
+            "duration": "1",
+            "coachId": "8",
+            "date": "27.06.2024 - 18.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "125",
+            "category": "stream",
+            "title": "Алгоритмы тренировок",
+            "duration": "1",
+            "coachId": "3",
+            "date": "22.06.2024 - 14.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "126",
+            "category": "stream",
+            "title": "Преимущества зумбы",
+            "duration": "1",
+            "coachId": "9",
+            "date": "25.06.2024 - 13.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "127",
+            "category": "stream",
+            "title": "Тренинг для подростков",
+            "duration": "2",
+            "coachId": "1",
+            "date": "21.06.2024 - 16.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "128",
+            "category": "stream",
+            "title": "Секреты шейпинга",
+            "duration": "1",
+            "coachId": "5",
+            "date": "24.06.2024 - 20.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "129",
+            "category": "stream",
+            "title": "Инвентарь для домашних тренировок",
+            "duration": "1",
+            "coachId": "4",
+            "date": "29.06.2024 - 18.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
+        },
+        {
+            "id": "130",
+            "category": "stream",
+            "title": "Все о йоге",
+            "duration": "2",
+            "coachId": "9",
+            "date": "26.06.2024 - 21.00",
+            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "streamUrl": "some_url",
+            "recordUrl": "some_url",
+            "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
         }
     ],
     "profiles": [
@@ -314,12 +454,23 @@
         },
         {
             "id": "11",
+            "avatar": "/images/default_avatar.webp",
             "role": "user",
             "name": "Мария",
             "patronymic": "Александровна",
             "surname": "Савкина",
+            "birthday": "11.05.1985",
+            "about": "Some information",
+            "workoutTypes": [],
+            "favorites": [],
             "email": "mashh@mail.ru",
-            "password": "12345"
+            "password": "12345",
+            "subscribe": {
+                "isActive": false,
+                "type": null,
+                "startDate": null,
+                "endDate": null
+            }
         }
     ]
 }

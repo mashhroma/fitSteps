@@ -48,7 +48,6 @@ const getClosestStreamDate = (workout) => {
         if (currDiff < diff) {
             diff = currDiff;
         }
-        console.log(currDiff);
     });
 
     const streamDay = new Date(Date.now() + diff * 24 * 3600 * 1000);
@@ -59,4 +58,31 @@ const getClosestStreamDate = (workout) => {
     return stringStreamDay;
 }
 
-export { getTypePath, getScheduleHTML, getCoach, getDescription, getClosestStreamDate };
+const isFavorite = (activeUser, workoutId) => {
+    if (activeUser) {
+        if (activeUser.favorites.includes(+workoutId)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+const renderFavorite = (activeUser, workoutId) => {
+    return <img width={30} height={30} src={isFavorite(activeUser, workoutId) ? '/images/favorite.svg' : '/images/unfavorite.svg'} alt="Добавить или удалить из избранного" />
+}
+
+const toggleFavorite = (activeUser, workoutId) => {
+    const editedUser = activeUser;
+    if (activeUser) {
+        let newFavorites = [];
+        if (isFavorite(activeUser, workoutId)) {
+            newFavorites = activeUser.favorites.filter(favorite => favorite !== +workoutId);
+        } else {
+            newFavorites = [...activeUser.favorites, +workoutId]
+        }
+        editedUser.favorites = newFavorites;
+    }
+    return editedUser;
+}
+
+export { getTypePath, getScheduleHTML, getCoach, getDescription, getClosestStreamDate, renderFavorite, toggleFavorite };

@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { ProfilesContext } from "../../contexts/ContextProvider";
-import { findProfile, getProfileDataFromForm, isFormCorrect } from "./modules";
+import { findProfile, getProfileDataFromForm, isFormCorrect } from "../../modules/formModules";
 import axios from "axios";
 
 export default function RegistrationForm({ role }) {

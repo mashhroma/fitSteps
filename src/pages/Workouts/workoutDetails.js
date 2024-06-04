@@ -1,21 +1,36 @@
-import React, { useContext } from "react";
+import React, { useEffect, useState } from "react";
+import { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import Breadcrumbs from "../../components/breadcrumbs";
-import { getCoach, getDescription, getScheduleHTML, getClosestStreamDate } from "./modules";
-import { ProfilesContext, TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
+import { getCoach, getDescription, getScheduleHTML, getClosestStreamDate, renderFavorite, toggleFavorite } from '../../modules/workoutsFunctions';
+import { ActiveUserContext, ProfilesContext, TypesContext, WorkoutsContext } from "../../contexts/ContextProvider";
 
 export default function WorkoutDetails() {
-    const workouts = useContext(WorkoutsContext);
-    const types = useContext(TypesContext);
-    const coaches = useContext(ProfilesContext);
-
     const { id } = useParams();
+
+    const types = useContext(TypesContext);
+    const profiles = useContext(ProfilesContext);
+    const [activeUser, editActiveUser] = useContext(ActiveUserContext);
+
+    const workouts = useContext(WorkoutsContext);
     const workout = workouts.find(workout => workout.id === id);
     const schedule = getScheduleHTML(workout);
-    const coach = getCoach(workout, coaches);
+    const coach = getCoach(workout, profiles);
     const description = getDescription(workout, types);
     const streamDate = getClosestStreamDate(workout);
+
+    const [favoriteIcon, setFavoriteIcon] = useState(renderFavorite(activeUser, workout.id));
+
+    const handleFavorite = () => {
+        const newUser = toggleFavorite(activeUser, workout.id);
+        editActiveUser(newUser);
+        setFavoriteIcon(renderFavorite(activeUser, workout.id));
+    }
+
+    useEffect(() => {
+        setFavoriteIcon(renderFavorite(activeUser, workout.id));
+    }, [activeUser]);
 
     if (!workout) {
         return <div>Такого занятие нет.</div>
@@ -26,7 +41,9 @@ export default function WorkoutDetails() {
             <Breadcrumbs items={workouts} types={types} />
 
             <h1 className="workouts__title">Курс занятий: "{workout.title}"</h1>
-
+            <div className="favorite-details" onClick={handleFavorite}>
+                {favoriteIcon}
+            </div>
             <div className="workouts__info">
                 <div className="workouts__left">
                     <p className="workouts__block">Дата ближайшего занятия: {streamDate}</p>

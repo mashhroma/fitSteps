@@ -11,7 +11,6 @@ export default function Filters({ types }) {
 
         const filterMY = filteredPath.map((item, index) => index > 1 ? '+' + item : item).join('');
         console.log(filterMY);
-        // return redirect(filteredPath.join('+'));
     }
 
     return (

@@ -1,11 +1,13 @@
 import { useContext, useState } from "react";
-import { ActiveUserContext, ProfilesContext } from "../../contexts/ContextProvider";
-import { findProfile, getProfileDataFromForm, isFormCorrect, isPasswordCorrect } from "./modules";
+import { ActiveCoachContext, ActiveUserContext, ProfilesContext } from "../../contexts/ContextProvider";
+import { findProfile, getProfileDataFromForm, isFormCorrect, isPasswordCorrect } from "../../modules/formModules";
 
-export default function LoginForm({ role }) {
+export default function LoginForm({ role, closeLoginForm }) {
     const profiles = useContext(ProfilesContext);
     const [activeUser, setActiveUser] = useContext(ActiveUserContext);
+    const [activeCoach, setActiveCoach] = useContext(ActiveCoachContext);
     const [message, setMessage] = useState('');
+    let profile = {};
 
     const loginProfile = (e) => {
         e.preventDefault();
@@ -18,15 +20,19 @@ export default function LoginForm({ role }) {
 
         if (trueForm) {
             const profileLoginData = getProfileDataFromForm(elements, role);
-            const profile = findProfile(profiles, profileLoginData.email, role);
+            profile = findProfile(profiles, profileLoginData.email, role);
 
             if (profile) {
                 if (isPasswordCorrect(profile, profileLoginData.password)) {
-                    localStorage.setItem(role === 'coach' ? 'activeCoach' : 'activeUser', JSON.stringify(profileLoginData.email));
+                    localStorage.setItem(role === 'coach' ? 'activeCoach' : 'activeUser', JSON.stringify(profile));
                     if (role === 'user') {
-                        setActiveUser(profileLoginData.email);
+                        setActiveUser(profile);
+                    }
+                    if (role === 'coach') {
+                        setActiveCoach(profile);
                     }
                     setMessage('');
+                    closeLoginForm();
                 } else {
                     setMessage('Неверный пароль');
                 }

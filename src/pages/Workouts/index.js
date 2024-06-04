@@ -8,8 +8,7 @@ import { ProfilesContext, TypesContext, WorkoutsContext } from "../../contexts/C
 export default function Workouts() {
     const workouts = useContext(WorkoutsContext);
     const types = useContext(TypesContext);
-    const coaches = useContext(ProfilesContext);
-
+    const profiles = useContext(ProfilesContext);
     const { typePath } = useParams();
 
     let filteredWorkouts = [];
@@ -26,10 +25,9 @@ export default function Workouts() {
             <div className="content">
                 <Filters types={types} />
                 <ul className='workouts'>
-                    {filteredWorkouts.map(workout => <WorkoutPreview workout={workout} types={types} coaches={coaches} />)}
+                    {filteredWorkouts.map(workout => <WorkoutPreview workout={workout} types={types} profiles={profiles} />)}
                 </ul>
             </div>
-
         </section>
     )
 }

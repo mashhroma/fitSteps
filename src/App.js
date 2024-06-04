@@ -26,6 +26,7 @@ import CoachAboutPage from './pages/SimplePages/CoachAboutPage';
 import CoachPublicPage from './pages/CoachPublicPage';
 import RegistrationForm from './components/Authorization/RegistrationForm';
 import LoginForm from './components/Authorization/LoginForm';
+import { UserAccount } from './pages/UserAccount';
 
 
 function App() {
@@ -44,6 +45,11 @@ function App() {
     setLoginFormVisibility(!loginFormVisibility);
   };
 
+  const [coachLoginFormVisibility, setCoachLoginFormVisibility] = useState(false);
+  const toggleCoachLoginForm = () => {
+    setCoachLoginFormVisibility(!loginFormVisibility);
+  };
+
   const closeForm = (e) => {
     if (!e.target.classList.contains('reg')) {
       if (coachRegFormVisibility) {
@@ -54,6 +60,9 @@ function App() {
       }
       if (loginFormVisibility) {
         toggleUserLoginForm();
+      }
+      if (coachLoginFormVisibility) {
+        setCoachLoginFormVisibility();
       }
       document.querySelector('.App').classList.remove('formVisibility');
     }
@@ -77,8 +86,9 @@ function App() {
               <Route path='/about' element={<About />} />
               <Route path='/contacts' element={<Contacts />} />
               <Route path='/subscriptions' element={<Subscriptions />} />
-              <Route path='/coach_about' element={<CoachAboutPage toggleCoachRegForm={toggleCoachRegForm} />} />
-              <Route path='/coaches/:id' element={<CoachPublicPage />} />
+              <Route path='/coach_about' element={<CoachAboutPage toggleCoachRegForm={toggleCoachRegForm} toggleCoachLoginForm={toggleCoachLoginForm} />} />
+              <Route path='/users/:id' element={<UserAccount />} />
+              <Route path='/public_coaches/:id' element={<CoachPublicPage />} />
               <Route path='/user_offer' element={<UserOffer />} />
               <Route path='/coach_offer' element={<CoachOffer />} />
               <Route path='/user_agreement' element={<UserAgreement />} />
@@ -90,11 +100,12 @@ function App() {
           </main>
           <Footer />
         </Router>
-        {(loginFormVisibility || coachRegFormVisibility || regFormVisibility) && (<div className='overlay'></div>)}
+        {(loginFormVisibility || coachRegFormVisibility || regFormVisibility || coachLoginFormVisibility) && (<div className='overlay'></div>)}
       </div>
       {coachRegFormVisibility && <RegistrationForm role='coach' />}
       {regFormVisibility && <RegistrationForm role='user' />}
-      {loginFormVisibility && <LoginForm role='user' />}
+      {loginFormVisibility && <LoginForm role='user' closeLoginForm={toggleUserLoginForm} />}
+      {coachLoginFormVisibility && <LoginForm role='coach' closeLoginForm={toggleCoachLoginForm} />}
     </ContextProvider>
   );
 }

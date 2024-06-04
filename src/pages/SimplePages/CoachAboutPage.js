@@ -1,14 +1,9 @@
 import { Link } from "react-router-dom";
 
-export default function CoachAboutPage({ toggleCoachRegForm }) {
+export default function CoachAboutPage({ toggleCoachRegForm, toggleCoachLoginForm }) {
     return (
         <section className="text">
-            <form className="form" action="#">
-                <h2>Войти в личный кабинет</h2>
-                <input className="form__input" type="email" placeholder="Ваша эл.почта" />
-                <input className="form__input" type="password" placeholder="Ваш пароль" />
-                <button className="button">Войти</button>
-            </form>
+            <div className="coach coach__button"><button className="button" onClick={toggleCoachLoginForm}>Войти в личный кабинет</button></div>
             <div className="coach coach__banner">
                 <ul>
                     <li>Удобная площадка</li>
