@@ -23,7 +23,7 @@ import UserOffer from './pages/UserOffer';
 import CoachOffer from './pages/CoachOffer';
 import ConfidentialPolicy from './pages/ConfidentialPolicy';
 import ErrorPage from './pages/ErrorPage404';
-import EmailConfirmPage from './pages/EmailConfirmPage';
+import ConfirmPage from './pages/ConfirmPage';
 import PaymentPage from './pages/PaymentPage';
 import CoachAboutPage from './pages/CoachAboutPage';
 import CoachPublicPage from './pages/CoachPublicPage';
@@ -73,8 +73,8 @@ function App() {
 
   return (
     <ContextProvider>
-      <div className="App" onClick={closeForm}>
-        <Router>
+      <Router>
+        <div className="App" onClick={closeForm}>
           <Header toggleUserRegForm={toggleUserRegForm} toggleUserLoginForm={toggleUserLoginForm} />
           <Submenu />
           <Subheader />
@@ -99,19 +99,19 @@ function App() {
               <Route path='/user_agreement' element={<UserAgreement />} />
               <Route path='/confidential_policy' element={<ConfidentialPolicy />} />
               <Route path='/payment_subscription/:subscribeType' element={<PaymentPage />} />
-              <Route path='/email_confirm' element={<EmailConfirmPage />} />
+              <Route path='/confirm' element={<ConfirmPage />} />
               <Route path='*' element={<ErrorPage />} />
             </Routes>
           </main>
           <Footer />
-        </Router>
-        {(loginFormVisibility || coachRegFormVisibility || regFormVisibility || coachLoginFormVisibility) && (<div className='overlay'></div>)}
-      </div>
-      {coachRegFormVisibility && <RegistrationForm role='coach' />}
-      {regFormVisibility && <RegistrationForm role='user' />}
-      {loginFormVisibility && <LoginForm role='user' closeLoginForm={toggleUserLoginForm} />}
-      {coachLoginFormVisibility && <LoginForm role='coach' closeLoginForm={toggleCoachLoginForm} />}
-    </ContextProvider>
+          {(loginFormVisibility || coachRegFormVisibility || regFormVisibility || coachLoginFormVisibility) && (<div className='overlay'></div>)}
+        </div>
+        {coachRegFormVisibility && <RegistrationForm role='coach' closeRegForm={toggleCoachRegForm} />}
+        {regFormVisibility && <RegistrationForm role='user' closeRegForm={toggleUserRegForm} />}
+        {loginFormVisibility && <LoginForm role='user' closeLoginForm={toggleUserLoginForm} />}
+        {coachLoginFormVisibility && <LoginForm role='coach' closeLoginForm={toggleCoachLoginForm} />}
+      </Router>
+    </ContextProvider >
   );
 }
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function EmailConfirmPage() {
+export default function ConfirmPage() {
     return (
         <section className="text">
             <h2>Поздравляем!</h2>

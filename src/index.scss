@@ -50,10 +50,15 @@ main {
     background-color: $colorDarkPink;
     transform: scale(1.1);
   }
+
+  &:active {
+    background: darken($color: $colorDarkPink, $amount: 10);
+  }
 }
 
 .reg {
   position: absolute;
+  position: fixed;
   width: 300px !important;
   top: 20%;
   left: 40%;
