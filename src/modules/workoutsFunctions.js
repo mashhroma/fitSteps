@@ -71,14 +71,14 @@ const renderFavorite = (activeUser, workoutId) => {
     return <img width={30} height={30} src={isFavorite(activeUser, workoutId) ? '/images/favorite.svg' : '/images/unfavorite.svg'} alt="Добавить или удалить из избранного" />
 }
 
-const toggleFavorite = (activeUser, dataItemId) => {
+const toggleFavorite = (activeUser, workoutId) => {
     const editedUser = activeUser;
     if (activeUser) {
         let newFavorites = [];
-        if (isFavorite(activeUser, dataItemId)) {
-            newFavorites = activeUser.favorites.filter(favorite => favorite !== +dataItemId);
+        if (isFavorite(activeUser, workoutId)) {
+            newFavorites = activeUser.favorites.filter(favorite => favorite !== +workoutId);
         } else {
-            newFavorites = [...activeUser.favorites, +dataItemId]
+            newFavorites = [...activeUser.favorites, +workoutId]
         }
         editedUser.favorites = newFavorites;
     }

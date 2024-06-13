@@ -14,9 +14,9 @@ export const ContextProvider = ({ children }) => {
     const [streams, setStreams] = useState([]);
     const [articles, setArticles] = useState([]);
     const [profiles, setProfiles] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
     const [activeUser, setActiveUser] = useState(JSON.parse(localStorage.getItem('activeUser')));
     const [activeCoach, setActiveCoach] = useState(JSON.parse(localStorage.getItem('activeCoach')));
-    // const [isLoading, setIsLoading] = React.useState(true);
 
     useEffect(() => {
         async function fetchData() {
@@ -26,33 +26,31 @@ export const ContextProvider = ({ children }) => {
                     axios.get('https://66598df5de346625136ceaa4.mockapi.io/profiles'),
                 ]);
 
-                // setIsLoading(false);
-
-                setDataItems(dataResponse.data);
                 setProfiles(profilesResponse.data);
+                setDataItems(dataResponse.data);
+
             } catch (error) {
                 alert('Ошибка при запросе данных ;(');
                 console.error(error);
             }
         }
-
         fetchData();
-
-        setWorkouts(() => dataItems.filter(obj => obj.category === 'workout'));
-        setStreams(() => dataItems.filter(obj => obj.category === 'stream'));
-        setArticles(() => dataItems.filter(obj => obj.category === 'article'));
     }, []);
 
+    useEffect(() => {
+        if (dataItems.length > 0) {
+            setWorkouts(() => dataItems.filter(obj => obj.category === 'workout'));
+            setStreams(() => dataItems.filter(obj => obj.category === 'stream'));
+            setArticles(() => dataItems.filter(obj => obj.category === 'article'));
+            setIsLoading(false);
+        }
+    }, [dataItems]);
 
     const editActiveUser = (newUser) => {
         setActiveUser(activeUser => activeUser = newUser);
-        localStorage.setItem('activeUser', JSON.stringify(activeUser));
-        axios.put(`https://66598df5de346625136ceaa4.mockapi.io/profiles/${activeUser.id}`, activeUser);
     }
 
-    // console.log(workouts);
-
-    return (
+    return (isLoading ? <div>Идет загрузка</div> :
         <DataContext.Provider value={{ dataItems, workouts, streams, articles }}>
             <TypesContext.Provider value={types}>
                 <ProfilesContext.Provider value={profiles}>

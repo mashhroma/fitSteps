@@ -9,25 +9,27 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Workouts from './pages/Workouts';
+import WorkoutDetails from './pages/WorkoutDetails';
 import Streams from './pages/Streams';
+import StreamsDetails from './pages/StreamsDetails';
 import Articles from './pages/Articles';
-import About from './pages/SimplePages/About';
+import ArticleDetails from './pages/ArticleDetails';
+
+import About from './pages/About';
 import Contacts from './pages/Contacts';
 import Subscriptions from './pages/Subscriptions';
-import UserAgreement from './pages/SimplePages/UserAgreement';
-import UserOffer from './pages/SimplePages/UserOffer';
-import CoachOffer from './pages/SimplePages/CoachOffer';
-import ConfidentialPolicy from './pages/SimplePages/ConfidentialPolicy';
-import ErrorPage from './pages/SimplePages/ErrorPage404';
-import EmailConfirmPage from './pages/SimplePages/EmailConfirmPage';
-import WorkoutDetails from './pages/Workouts/WorkoutDetails';
+import UserAgreement from './pages/UserAgreement';
+import UserOffer from './pages/UserOffer';
+import CoachOffer from './pages/CoachOffer';
+import ConfidentialPolicy from './pages/ConfidentialPolicy';
+import ErrorPage from './pages/ErrorPage404';
+import EmailConfirmPage from './pages/EmailConfirmPage';
 import PaymentPage from './pages/PaymentPage';
-import CoachAboutPage from './pages/SimplePages/CoachAboutPage';
+import CoachAboutPage from './pages/CoachAboutPage';
 import CoachPublicPage from './pages/CoachPublicPage';
-import RegistrationForm from './components/Authorization/RegistrationForm';
-import LoginForm from './components/Authorization/LoginForm';
-import { UserAccount } from './pages/UserAccount';
-import StreamsDetails from './pages/Streams/StreamsDetails';
+import RegistrationForm from './components/RegistrationForm';
+import LoginForm from './components/LoginForm';
+import UserAccount from './pages/UserAccount';
 
 
 function App() {
@@ -85,12 +87,13 @@ function App() {
               <Route path='/streams' element={<Streams />} />
               <Route path='/streams/:id' element={<StreamsDetails />} />
               <Route path='/articles' element={<Articles />} />
+              <Route path='/articles/:id' element={<ArticleDetails />} />
               <Route path='/about' element={<About />} />
               <Route path='/contacts' element={<Contacts />} />
               <Route path='/subscriptions' element={<Subscriptions />} />
               <Route path='/coach_about' element={<CoachAboutPage toggleCoachRegForm={toggleCoachRegForm} toggleCoachLoginForm={toggleCoachLoginForm} />} />
               <Route path='/users/:id' element={<UserAccount />} />
-              <Route path='/public_coaches/:id' element={<CoachPublicPage />} />
+              <Route path='/coaches/:id' element={<CoachPublicPage />} />
               <Route path='/user_offer' element={<UserOffer />} />
               <Route path='/coach_offer' element={<CoachOffer />} />
               <Route path='/user_agreement' element={<UserAgreement />} />

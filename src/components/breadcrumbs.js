@@ -14,7 +14,19 @@ export default function Breadcrumbs({ items, types = null }) {
                     link += ('/' + part);
                     let subtitle = '';
                     if (index === 0) {
-                        subtitle = part === 'workouts' ? 'Все занятия' : 'streams' ? 'Все вебинары' : 'Все статьи';
+                        switch (part) {
+                            case 'workouts':
+                                subtitle = 'Все занятия';
+                                break;
+                            case 'streams':
+                                subtitle = 'Все вебинары';
+                                break;
+                            case 'articles':
+                                subtitle = 'Все статьи';
+                                break;
+                            default:
+                                break;
+                        }
                     }
                     if (index === 1) {
                         if (pathParts[0] === 'workouts') {

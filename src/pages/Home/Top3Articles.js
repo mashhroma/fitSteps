@@ -1,13 +1,18 @@
-export default function Top3Articles() {
+import { Link } from "react-router-dom"
+import ArticlePreview from "../../components/ArticlePreview"
+
+export default function Top3Articles({ articles }) {
     return (
-        <div className="top3">
-            <h3 className="top3__title">Статьи</h3>
-            <ul className='top3__list'>
-                <li className="top3__item">Article</li>
-                <li className="top3__item">Article</li>
-                <li className="top3__item">Article</li>
+        <div className="top green">
+            <h3 className="top__title">Последние статьи</h3>
+            <ul className='top__list'>
+                {articles.map((article, index) => {
+                    if (index < 3) return (
+                        <li key={article.id}><ArticlePreview article={article} width={400} height={360} /></li>
+                    )
+                })}
             </ul>
-            <div className="top3__all">Посмотреть все</div>
+            <div className="top__all"><Link to='/articles'>Показать все</Link></div>
         </div>
     )
 }
