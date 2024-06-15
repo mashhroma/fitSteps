@@ -8,7 +8,7 @@
             "duration": "1",
             "coachId": "1",
             "schedule": "1 - 20.00, 3 - 21.00",
-            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "image": "/images/workouts/01.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -20,7 +20,7 @@
             "duration": "2",
             "coachId": "2",
             "schedule": "2 - 20.00, 4 - 21.00",
-            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "image": "/images/workouts/02.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -32,7 +32,7 @@
             "duration": "2",
             "coachId": "3",
             "schedule": "3 - 20.00, 5 - 21.00",
-            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "image": "/images/workouts/03.jpeg",
             "streamUrl": "some_url",
             "recordUrl": ""
         },
@@ -44,7 +44,7 @@
             "duration": "2",
             "coachId": "4",
             "schedule": "1 - 18.00, 4 - 17.00",
-            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "image": "/images/workouts/04.jpg",
             "streamUrl": "some_url",
             "recordUrl": ""
         },
@@ -56,7 +56,7 @@
             "duration": "1",
             "coachId": "2",
             "schedule": "2 - 13.00, 5 - 13.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/workouts/05.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -68,7 +68,7 @@
             "duration": "1",
             "coachId": "4",
             "schedule": "1 - 20.00, 3 - 21.00",
-            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "image": "/images/workouts/06.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -80,7 +80,7 @@
             "duration": "1",
             "coachId": "1",
             "schedule": "2 - 20.00, 4 - 21.00",
-            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "image": "/images/workouts/07.jpeg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -92,7 +92,7 @@
             "duration": "1",
             "coachId": "3",
             "schedule": "3 - 20.00, 5 - 21.00",
-            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "image": "/images/workouts/08.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -104,7 +104,7 @@
             "duration": "1",
             "coachId": "5",
             "schedule": "1 - 18.00, 4 - 17.00",
-            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "image": "/images/workouts/09.jpg",
             "streamUrl": "some_url",
             "recordUrl": ""
         },
@@ -116,7 +116,7 @@
             "duration": "1",
             "coachId": "4",
             "schedule": "2 - 13.00, 5 - 13.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/workouts/10.jpeg",
             "streamUrl": "some_url",
             "recordUrl": ""
         },
@@ -128,7 +128,7 @@
             "duration": "1",
             "coachId": "6",
             "schedule": "1 - 20.00, 3 - 21.00",
-            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "image": "/images/workouts/11.png",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -140,7 +140,7 @@
             "duration": "2",
             "coachId": "7",
             "schedule": "2 - 20.00, 4 - 21.00",
-            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "image": "/images/workouts/12.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -152,7 +152,7 @@
             "duration": "2",
             "coachId": "7",
             "schedule": "3 - 20.00, 5 - 21.00",
-            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "image": "/images/workouts/13.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -164,7 +164,7 @@
             "duration": "2",
             "coachId": "8",
             "schedule": "1 - 18.00, 4 - 17.00",
-            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "image": "/images/workouts/14.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -176,7 +176,7 @@
             "duration": "1",
             "coachId": "9",
             "schedule": "2 - 13.00, 5 - 13.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/workouts/15.jpeg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -188,7 +188,7 @@
             "duration": "1",
             "coachId": "9",
             "schedule": "1 - 20.00, 3 - 21.00",
-            "image": "https://s1.1zoom.ru/big7/370/Fitness_Earobics_kind_459352.jpg",
+            "image": "/images/workouts/16.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -200,7 +200,7 @@
             "duration": "1",
             "coachId": "10",
             "schedule": "2 - 20.00, 4 - 21.00",
-            "image": "https://mykaleidoscope.ru/uploads/posts/2022-08/1660584642_36-mykaleidoscope-ru-p-fitnes-trenirovka-doma-dizain-krasivo-foto-39.jpg",
+            "image": "/images/workouts/17.jpg",
             "streamUrl": "some_url",
             "recordUrl": ""
         },
@@ -212,7 +212,7 @@
             "duration": "1",
             "coachId": "8",
             "schedule": "3 - 20.00, 5 - 21.00",
-            "image": "https://de-fragrance.ru/wp-content/uploads/9/e/7/9e7a84c19e7da9f998a0df5e5f0acdc7.jpeg",
+            "image": "/images/workouts/18.jpeg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -224,7 +224,7 @@
             "duration": "1",
             "coachId": "5",
             "schedule": "1 - 18.00, 4 - 17.00",
-            "image": "https://ucare.timepad.ru/ca2caee3-2674-4082-8ce5-16c10435ffab/poster_event_1763988.jpg",
+            "image": "/images/workouts/19.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -236,7 +236,7 @@
             "duration": "1",
             "coachId": "6",
             "schedule": "2 - 13.00, 5 - 13.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/workouts/20.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url"
         },
@@ -247,7 +247,7 @@
             "duration": "1",
             "coachId": "6",
             "date": "25.06.2024 - 20.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/01.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -259,7 +259,7 @@
             "duration": "1",
             "coachId": "2",
             "date": "23.06.2024 - 19.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/02.png",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -271,7 +271,7 @@
             "duration": "2",
             "coachId": "7",
             "date": "26.06.2024 - 21.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/03.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -283,7 +283,7 @@
             "duration": "1",
             "coachId": "8",
             "date": "27.06.2024 - 18.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/04.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -295,7 +295,7 @@
             "duration": "1",
             "coachId": "3",
             "date": "22.06.2024 - 14.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/05.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -307,7 +307,7 @@
             "duration": "1",
             "coachId": "9",
             "date": "25.06.2024 - 13.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/06.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -319,7 +319,7 @@
             "duration": "2",
             "coachId": "1",
             "date": "21.06.2024 - 16.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/07.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -331,7 +331,7 @@
             "duration": "1",
             "coachId": "5",
             "date": "24.06.2024 - 20.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/08.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -343,7 +343,7 @@
             "duration": "1",
             "coachId": "4",
             "date": "29.06.2024 - 18.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/09.jpg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -355,7 +355,7 @@
             "duration": "2",
             "coachId": "9",
             "date": "26.06.2024 - 21.00",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/streams/10.jpeg",
             "streamUrl": "some_url",
             "recordUrl": "some_url",
             "description": "Приглашаем вас на наш бесплатный вебинар по фитнесу! Узнайте секреты успешного похудения и укрепления здоровья. Присоединяйтесь к нам онлайн и получите ценные советы от опытных тренеров. Мы расскажем вам о правильном питании, упражнениях и мотивации. Не упустите возможность изменить свою жизнь к лучшему! Записывайтесь на вебинар прямо сейчас!"
@@ -366,7 +366,7 @@
             "title": "Фитнес: путь к здоровью и гармонии",
             "coachId": "1",
             "date": "21.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/01.jpeg",
             "text": "Фитнес — неотъемлемая часть здорового образа жизни, которая помогает укрепить физическое здоровье, улучшить настроение и повысить уровень энергии. В этой статье мы расскажем, что такое фитнес и как он влияет на наше тело и психику."
         },
         {
@@ -375,7 +375,7 @@
             "title": "История фитнеса",
             "coachId": "2",
             "date": "22.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/02.jpeg",
             "text": "Фитнес имеет древнюю историю, начиная с эпохи древних греков и римлян, которые активно занимались физическими упражнениями. Современный фитнес начал развиваться в XX веке с появлением первых тренажёров и специализированных залов."
         },
         {
@@ -384,7 +384,7 @@
             "title": "Здоровье и фитнес",
             "coachId": "3",
             "date": "23.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/03.jpeg",
             "text": "Регулярные физические тренировки помогают укрепить иммунную систему, улучшить обмен веществ и снизить риск сердечно-сосудистых заболеваний. Физическая активность также способствует выработке эндорфинов, гормонов счастья, которые повышают настроение и уровень энергии."
         },
         {
@@ -393,7 +393,7 @@
             "title": "Польза фитнеса для организма",
             "coachId": "4",
             "date": "24.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/04.jpg",
             "text": "Улучшение физической формы и силы. Снижение уровня стресса и улучшение психологического благополучия. Контроль веса и ускорение обмена веществ. Укрепление костей и суставов. Снижение риска развития хронических заболеваний, таких как диабет и артериальная гипертензия."
         },
         {
@@ -402,7 +402,7 @@
             "title": "Типы фитнеса",
             "coachId": "5",
             "date": "25.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/05.jpg",
             "text": "Существует множество типов фитнеса, каждый из которых ориентирован на достижение определённых целей и удовлетворение индивидуальных предпочтений. Некоторые популярные типы фитнеса включают кардио тренировки, силовые тренировки, групповые тренировки и функциональный тренинг."
         },
         {
@@ -411,7 +411,7 @@
             "title": "Как начать заниматься фитнесом",
             "coachId": "6",
             "date": "26.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/06.jpeg",
             "text": "Перед началом занятий определите свои цели и уровень физической подготовки. Затем разработайте план тренировок, проконсультируйтесь с тренером или специалистом по фитнесу."
         },
         {
@@ -420,7 +420,7 @@
             "title": "Основные упражнения в фитнесе",
             "coachId": "7",
             "date": "27.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/07.jpg",
             "text": "В фитнесе существует множество упражнений, которые помогают укрепить различные группы мышц и улучшить физическую форму. Некоторые из основных упражнений включают приседания, отжимания, подтягивания, жим штанги и планку."
         },
         {
@@ -429,7 +429,7 @@
             "title": "Значимость правильного питания",
             "coachId": "8",
             "date": "28.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/08.jpg",
             "text": "Правильное питание играет ключевую роль в достижении фитнес-целей. Оно обеспечивает необходимые питательные вещества для восстановления и роста мышц, поддержания энергетического баланса и общего благополучия организма."
         },
         {
@@ -438,7 +438,7 @@
             "title": "Распространённые мифы о фитнесе",
             "coachId": "9",
             "date": "29.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "image": "/images/articles/09.jpg",
             "text": "В мире фитнеса существует множество распространённых мифов, которые могут ввести в заблуждение. Некоторые из них включают мнение о том, что тренировки с гантелями приведут к набору больших мышц у женщин или что тренировки на пустой желудок помогут сжигать больше жира."
         },
         {
@@ -446,8 +446,8 @@
             "category": "article",
             "title": "Полезные советы для достижения целей",
             "coachId": "10",
-            "date": "300.06.2024",
-            "image": "https://sportishka.com/uploads/posts/2022-11/1667438976_54-sportishka-com-p-khip-khop-kostyumi-dlya-sovremennikh-tants-55.jpg",
+            "date": "30.06.2024",
+            "image": "/images/articles/10.jpg",
             "text": "Установите конкретные и измеримые цели, разнообразьте свои тренировки, не забывайте об отдыхе и восстановлении, постепенно увеличивайте интенсивность тренировок и будьте последовательными."
         }
     ],

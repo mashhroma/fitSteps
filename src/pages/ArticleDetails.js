@@ -11,8 +11,6 @@ export default function ArticleDetails() {
     const article = articles.find(article => article.id === id);
     const coach = getCoach(article, profiles);
 
-    console.log(article);
-
     if (!article) {
         return <div>Такой статьи нет.</div>
     }

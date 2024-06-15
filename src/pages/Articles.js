@@ -11,7 +11,7 @@ export default function Articles() {
             <Breadcrumbs items={articles} />
             <div className="content">
                 <ul className='workouts'>
-                    {articles.map(article => <li key={article.id}><ArticlePreview article={article} /></li>)}
+                    {articles.map(article => <li key={article.id}><ArticlePreview article={article} height={700} /></li>)}
                 </ul>
             </div>
         </section>
