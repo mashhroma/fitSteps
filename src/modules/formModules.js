@@ -2,8 +2,9 @@ const isFormCorrect = (elements) => {
     return Array.from(elements).filter(element => element.required && element.value === '').length === 0;
 };
 
-const getProfileDataFromForm = (elements, role) => {
+const createProfile = (elements, role, profiles) => {
     let userData = {
+        id: Math.max(...profiles.map(profile => +profile.id)) + 1,
         role: role,
         avatar: '/images/default_avatar.webp',
         about: 'Напишите немного о себе'
@@ -34,6 +35,16 @@ const getProfileDataFromForm = (elements, role) => {
     return userData;
 };
 
+const getProfileDataFromForm = (elements) => {
+    let userData = {};
+    Array.from(elements).forEach(element => {
+        if (element.name) {
+            userData[element.name] = element.value
+        };
+    });
+    return userData;
+};
+
 const findProfile = (profiles, email, role) => {
     return profiles
         .filter(currProfile => currProfile.role === role)
@@ -44,4 +55,4 @@ const isPasswordCorrect = (profile, password) => {
     return profile.password === password;
 };
 
-export { isFormCorrect, getProfileDataFromForm, findProfile, isPasswordCorrect };
+export { isFormCorrect, getProfileDataFromForm, findProfile, isPasswordCorrect, createProfile };

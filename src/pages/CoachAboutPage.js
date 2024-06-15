@@ -3,7 +3,7 @@ import { ActiveCoachContext } from "../contexts/ContextProvider";
 import { useContext } from "react";
 
 export default function CoachAboutPage({ toggleCoachRegForm, toggleCoachLoginForm }) {
-    const [activeCoach, setActiveCoach] = useContext(ActiveCoachContext);
+    const { activeCoach, setActiveCoach } = useContext(ActiveCoachContext);
 
     const removeActiveCoach = () => {
         if (activeCoach) {

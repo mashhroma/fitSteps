@@ -1,10 +1,12 @@
 import { useContext, useState } from "react";
-import { ProfilesContext } from "../contexts/ContextProvider";
-import { findProfile, getProfileDataFromForm, isFormCorrect } from "../modules/formModules";
+import { ActiveCoachContext, ActiveUserContext, ProfilesContext } from "../contexts/ContextProvider";
+import { findProfile, createProfile, isFormCorrect } from "../modules/formModules";
 import axios from "axios";
 
 export default function RegistrationForm({ role, closeRegForm }) {
     const { profiles, setProfiles } = useContext(ProfilesContext);
+    const { setActiveUser } = useContext(ActiveUserContext);
+    const { setActiveCoach } = useContext(ActiveCoachContext);
     const [message, setMessage] = useState('');
 
     const createUser = (e) => {
@@ -17,7 +19,7 @@ export default function RegistrationForm({ role, closeRegForm }) {
         }
 
         if (trueForm) {
-            const newProfile = getProfileDataFromForm(elements, role);
+            const newProfile = createProfile(elements, role, profiles);
             const checkProfile = findProfile(profiles, newProfile.email, role);
 
             console.log(newProfile);
@@ -31,6 +33,13 @@ export default function RegistrationForm({ role, closeRegForm }) {
                 axios.post(`https://66598df5de346625136ceaa4.mockapi.io/profiles/`, newProfile);
                 setProfiles([...profiles, newProfile])
                 setMessage('ВЫ УСПЕШНО ЗАРЕГИСТРИРОВАЛИСЬ!');
+                localStorage.setItem(role === 'coach' ? 'activeCoach' : 'activeUser', JSON.stringify(newProfile));
+                if (role === 'user') {
+                    setActiveUser(newProfile);
+                }
+                if (role === 'coach') {
+                    setActiveCoach(newProfile);
+                }
                 setTimeout(() => {
                     closeRegForm();
                 }, 1000);

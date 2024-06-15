@@ -4,8 +4,8 @@ import { findProfile, getProfileDataFromForm, isFormCorrect, isPasswordCorrect }
 
 export default function LoginForm({ role, closeLoginForm }) {
     const { profiles } = useContext(ProfilesContext);
-    const [activeUser, setActiveUser] = useContext(ActiveUserContext);
-    const [activeCoach, setActiveCoach] = useContext(ActiveCoachContext);
+    const { setActiveUser } = useContext(ActiveUserContext);
+    const { setActiveCoach } = useContext(ActiveCoachContext);
     const [message, setMessage] = useState('');
     let profile = {};
 

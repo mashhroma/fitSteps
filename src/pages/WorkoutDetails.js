@@ -5,13 +5,14 @@ import { useParams, Link } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { getCoach, getDescription, getScheduleHTML, getClosestStreamDate, renderFavorite, toggleFavorite } from '../modules/workoutsFunctions';
 import { ActiveUserContext, ProfilesContext, TypesContext, DataContext } from "../contexts/ContextProvider";
+import axios from "axios";
 
 export default function WorkoutDetails() {
     const { id } = useParams();
 
     const types = useContext(TypesContext);
     const { profiles } = useContext(ProfilesContext);
-    const [activeUser, editActiveUser] = useContext(ActiveUserContext);
+    const { activeUser, editActiveUser } = useContext(ActiveUserContext);
 
     const { workouts } = useContext(DataContext);
     const workout = workouts.find(workout => workout.id === id);
@@ -25,12 +26,14 @@ export default function WorkoutDetails() {
     const handleFavorite = () => {
         const newUser = toggleFavorite(activeUser, workout.id);
         editActiveUser(newUser);
+        localStorage.setItem('activeUser', JSON.stringify(newUser));
+        axios.put(`https://66598df5de346625136ceaa4.mockapi.io/profiles/${newUser.id}`, newUser);
         setFavoriteIcon(renderFavorite(activeUser, workout.id));
     }
 
     useEffect(() => {
         setFavoriteIcon(renderFavorite(activeUser, workout.id));
-    }, [activeUser]);
+    }, [activeUser, workout.id]);
 
     if (!workout) {
         return <div>Такого занятие нет.</div>
@@ -41,6 +44,8 @@ export default function WorkoutDetails() {
             <Breadcrumbs items={workouts} types={types} />
 
             <h1 className="workouts__title">Курс занятий: "{workout.title}"</h1>
+            {activeUser &&
+                <div className="favorite" onClick={handleFavorite}>{favoriteIcon}</div>}
             <div className="favorite-details" onClick={handleFavorite}>
                 {favoriteIcon}
             </div>

@@ -11,7 +11,7 @@ export default function WorkoutPreview({ workout, width = 400, height = 500 }) {
     const typePath = getTypePath(workout, types);
     const schedule = getScheduleHTML(workout);
     const coach = getCoach(workout, profiles);
-    const [activeUser, editActiveUser] = useContext(ActiveUserContext);
+    const { activeUser, editActiveUser } = useContext(ActiveUserContext);
     const [favoriteIcon, setFavoriteIcon] = useState(renderFavorite(activeUser, workout.id));
 
     const handleFavorite = () => {
@@ -24,7 +24,7 @@ export default function WorkoutPreview({ workout, width = 400, height = 500 }) {
 
     useEffect(() => {
         setFavoriteIcon(renderFavorite(activeUser, workout.id));
-    }, [activeUser]);
+    }, [activeUser, workout.id]);
 
     return (
         <article>

@@ -23,7 +23,6 @@ import UserOffer from './pages/UserOffer';
 import CoachOffer from './pages/CoachOffer';
 import ConfidentialPolicy from './pages/ConfidentialPolicy';
 import ErrorPage from './pages/ErrorPage404';
-import ConfirmPage from './pages/ConfirmPage';
 import PaymentPage from './pages/PaymentPage';
 import CoachAboutPage from './pages/CoachAboutPage';
 import CoachPublicPage from './pages/CoachPublicPage';
@@ -101,7 +100,6 @@ function App() {
               <Route path='/user_agreement' element={<UserAgreement />} />
               <Route path='/confidential_policy' element={<ConfidentialPolicy />} />
               <Route path='/payment_subscription/:subscribeType' element={<PaymentPage />} />
-              <Route path='/confirm' element={<ConfirmPage />} />
               <Route path='*' element={<ErrorPage />} />
             </Routes>
           </main>

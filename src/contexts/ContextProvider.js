@@ -58,8 +58,8 @@ export const ContextProvider = ({ children }) => {
         <DataContext.Provider value={{ dataItems, workouts, streams, articles }}>
             <TypesContext.Provider value={types}>
                 <ProfilesContext.Provider value={{ profiles, setProfiles }}>
-                    <ActiveUserContext.Provider value={[activeUser, setActiveUser, editActiveUser]}>
-                        <ActiveCoachContext.Provider value={[activeCoach, setActiveCoach, editActiveCoach]}>
+                    <ActiveUserContext.Provider value={{ activeUser, setActiveUser, editActiveUser }}>
+                        <ActiveCoachContext.Provider value={{ activeCoach, setActiveCoach, editActiveCoach }}>
                             {children}
                         </ActiveCoachContext.Provider>
                     </ActiveUserContext.Provider>

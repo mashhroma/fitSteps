@@ -5,7 +5,7 @@ import WorkoutPreview from "../components/WorkoutPreview";
 import axios from "axios";
 
 export default function UserAccount() {
-    const [activeUser, editActiveUser] = useContext(ActiveUserContext);
+    const { activeUser, editActiveUser } = useContext(ActiveUserContext);
     const { workouts } = useContext(DataContext);
     const myWorks = activeUser.favorites.map(favorite => workouts.find(workout => +workout.id === favorite));
 
@@ -35,9 +35,8 @@ export default function UserAccount() {
     }
 
     const editName = (e) => {
-        if (allowEditName) {
-            setName(e.target.value);
-        }
+        onChangeAllowEditName()
+        setName(e.target.value);
     }
     const onChangeAllowEditName = () => {
         setAllowEditName(true);
@@ -54,9 +53,8 @@ export default function UserAccount() {
     }
 
     const editSurname = (e) => {
-        if (allowEditSurname) {
-            setSurname(e.target.value);
-        }
+        onChangeAllowEditSurname()
+        setSurname(e.target.value);
     }
     const onChangeAllowEditSurname = () => {
         setAllowEditSurname(true);
@@ -74,9 +72,8 @@ export default function UserAccount() {
     }
 
     const editBirthday = (e) => {
-        if (allowEditBirthday) {
-            setBirthday(e.target.value);
-        }
+        onChangeAllowEditBirthday()
+        setBirthday(e.target.value);
     }
     const onChangeAllowEditBirthday = () => {
         setAllowEditBirthday(true);
@@ -92,9 +89,8 @@ export default function UserAccount() {
     }
 
     const editEmail = (e) => {
-        if (allowEditEmail) {
-            setEmail(e.target.value);
-        }
+        onChangeAllowEditEmail()
+        setEmail(e.target.value);
     }
     const onChangeAllowEditEmail = () => {
         setAllowEditEmail(true);
@@ -113,9 +109,8 @@ export default function UserAccount() {
     }
 
     const editAbout = (e) => {
-        if (allowEditAbout) {
-            setAbout(e.target.value);
-        }
+        onChangeAllowEditAbout()
+        setAbout(e.target.value);
     }
     const onChangeAllowEditAbout = () => {
         setAllowEditAbout(true);
@@ -210,7 +205,7 @@ export default function UserAccount() {
                 </div>
                 <div className="personal__about">
                     <h3>Обо мне</h3>
-                    <textarea id="about" type="text" value={about} onChange={editAbout} />
+                    <textarea id="about" type="text" value={about} onChange={editAbout} placeholder="Напишите о себе" />
                     {allowEditAbout ?
                         <img width={30} height={30} src="/images/checked.png" alt="Edit" onClick={onChangeAbout} /> :
                         <img width={30} height={30} src="/images/edit_big.png" alt="Edit" onClick={onChangeAllowEditAbout} />}
@@ -219,9 +214,13 @@ export default function UserAccount() {
             </section>
             <section className="favorites">
                 <h3>Мои занятия</h3>
-                <ul className="workouts">
-                    {myWorks.map(workout => <li key={workout.id}><WorkoutPreview workout={workout} width={200} height={400} /></li>)}
-                </ul>
+                {myWorks.length > 0 ?
+                    <ul className="workouts">
+                        {myWorks.map(workout => <li key={workout.id}><WorkoutPreview workout={workout} width={200} height={400} /></li>)}
+                    </ul> :
+                    <div className="text"><p>Вы пока не добавили ни одного онлайн-занятия в избранное. Выберите занятие <Link to='/workouts'>в разделе "онлайн-занятий".</Link></p>
+                    </div>}
+
             </section>
         </div>
     )

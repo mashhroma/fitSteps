@@ -5,7 +5,7 @@ import WorkoutPreview from "../components/WorkoutPreview";
 import axios from "axios";
 
 export default function CoachAccount() {
-    const [activeCoach, setActiveCoach, editActiveCoach] = useContext(ActiveCoachContext);
+    const { activeCoach, setActiveCoach, editActiveCoach } = useContext(ActiveCoachContext);
 
     const { workouts } = useContext(DataContext);
     const myWorks = workouts.filter(workout => +workout.coachId === +activeCoach.id);
@@ -43,9 +43,8 @@ export default function CoachAccount() {
     }
 
     const editName = (e) => {
-        if (allowEditName) {
-            setName(e.target.value);
-        }
+        onChangeAllowEditName();
+        setName(e.target.value);
     }
     const onChangeAllowEditName = () => {
         setAllowEditName(true);
@@ -62,9 +61,8 @@ export default function CoachAccount() {
     }
 
     const editSurname = (e) => {
-        if (allowEditSurname) {
-            setSurname(e.target.value);
-        }
+        onChangeAllowEditSurname();
+        setSurname(e.target.value);
     }
     const onChangeAllowEditSurname = () => {
         setAllowEditSurname(true);
@@ -81,9 +79,8 @@ export default function CoachAccount() {
     }
 
     const editBirthday = (e) => {
-        if (allowEditBirthday) {
-            setBirthday(e.target.value);
-        }
+        onChangeAllowEditBirthday();
+        setBirthday(e.target.value);
     }
     const onChangeAllowEditBirthday = () => {
         setAllowEditBirthday(true);
@@ -99,9 +96,8 @@ export default function CoachAccount() {
     }
 
     const editEmail = (e) => {
-        if (allowEditEmail) {
-            setEmail(e.target.value);
-        }
+        onChangeAllowEditEmail();
+        setEmail(e.target.value);
     }
     const onChangeAllowEditEmail = () => {
         setAllowEditEmail(true);
@@ -120,9 +116,8 @@ export default function CoachAccount() {
     }
 
     const editAbout = (e) => {
-        if (allowEditAbout) {
-            setAbout(e.target.value);
-        }
+        onChangeAllowEditAbout();
+        setAbout(e.target.value);
     }
     const onChangeAllowEditAbout = () => {
         setAllowEditAbout(true);
@@ -216,7 +211,7 @@ export default function CoachAccount() {
                 </div>
                 <div className="personal__about">
                     <h3>Обо мне</h3>
-                    <textarea id="about" type="text" value={about} onChange={editAbout} />
+                    <textarea id="about" type="text" value={about} placeholder="Напишите о себе" onChange={editAbout} />
                     {allowEditAbout ?
                         <img width={30} height={30} src="/images/checked.png" alt="Edit" onClick={onChangeAbout} /> :
                         <img width={30} height={30} src="/images/edit_big.png" alt="Edit" onClick={onChangeAllowEditAbout} />}
