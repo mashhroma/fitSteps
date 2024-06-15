@@ -6,7 +6,7 @@ import { ProfilesContext, DataContext } from "../contexts/ContextProvider";
 
 export default function ArticleDetails() {
     const { id } = useParams();
-    const profiles = useContext(ProfilesContext);
+    const { profiles } = useContext(ProfilesContext);
     const { articles } = useContext(DataContext);
     const article = articles.find(article => article.id === id);
     const coach = getCoach(article, profiles);

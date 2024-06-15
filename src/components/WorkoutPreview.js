@@ -7,7 +7,7 @@ import axios from "axios";
 
 export default function WorkoutPreview({ workout, width = 400, height = 500 }) {
     const types = useContext(TypesContext);
-    const profiles = useContext(ProfilesContext);
+    const { profiles } = useContext(ProfilesContext);
     const typePath = getTypePath(workout, types);
     const schedule = getScheduleHTML(workout);
     const coach = getCoach(workout, profiles);

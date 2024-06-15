@@ -10,7 +10,7 @@ export default function WorkoutDetails() {
     const { id } = useParams();
 
     const types = useContext(TypesContext);
-    const profiles = useContext(ProfilesContext);
+    const { profiles } = useContext(ProfilesContext);
     const [activeUser, editActiveUser] = useContext(ActiveUserContext);
 
     const { workouts } = useContext(DataContext);

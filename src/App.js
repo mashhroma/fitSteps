@@ -30,6 +30,7 @@ import CoachPublicPage from './pages/CoachPublicPage';
 import RegistrationForm from './components/RegistrationForm';
 import LoginForm from './components/LoginForm';
 import UserAccount from './pages/UserAccount';
+import CoachAccount from './pages/CoachAccount';
 
 
 function App() {
@@ -50,7 +51,7 @@ function App() {
 
   const [coachLoginFormVisibility, setCoachLoginFormVisibility] = useState(false);
   const toggleCoachLoginForm = () => {
-    setCoachLoginFormVisibility(!loginFormVisibility);
+    setCoachLoginFormVisibility(!coachLoginFormVisibility);
   };
 
   const closeForm = (e) => {
@@ -94,6 +95,7 @@ function App() {
               <Route path='/coach_about' element={<CoachAboutPage toggleCoachRegForm={toggleCoachRegForm} toggleCoachLoginForm={toggleCoachLoginForm} />} />
               <Route path='/users/:id' element={<UserAccount />} />
               <Route path='/coaches/:id' element={<CoachPublicPage />} />
+              <Route path='/profiles/:id' element={<CoachAccount />} />
               <Route path='/user_offer' element={<UserOffer />} />
               <Route path='/coach_offer' element={<CoachOffer />} />
               <Route path='/user_agreement' element={<UserAgreement />} />

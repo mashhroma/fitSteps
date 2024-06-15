@@ -50,12 +50,16 @@ export const ContextProvider = ({ children }) => {
         setActiveUser(activeUser => activeUser = newUser);
     }
 
+    const editActiveCoach = (newCoach) => {
+        setActiveCoach(activeCoach => activeCoach = newCoach);
+    }
+
     return (isLoading ? <div>Идет загрузка</div> :
         <DataContext.Provider value={{ dataItems, workouts, streams, articles }}>
             <TypesContext.Provider value={types}>
-                <ProfilesContext.Provider value={profiles}>
+                <ProfilesContext.Provider value={{ profiles, setProfiles }}>
                     <ActiveUserContext.Provider value={[activeUser, setActiveUser, editActiveUser]}>
-                        <ActiveCoachContext.Provider value={[activeCoach, setActiveCoach]}>
+                        <ActiveCoachContext.Provider value={[activeCoach, setActiveCoach, editActiveCoach]}>
                             {children}
                         </ActiveCoachContext.Provider>
                     </ActiveUserContext.Provider>

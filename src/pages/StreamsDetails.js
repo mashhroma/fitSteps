@@ -6,9 +6,9 @@ import { ProfilesContext, DataContext } from "../contexts/ContextProvider";
 
 export default function StreamsDetails() {
     const { id } = useParams();
-    const profiles = useContext(ProfilesContext);
+    const { profiles } = useContext(ProfilesContext);
     const { streams } = useContext(DataContext);
-    const stream = streams.find(stream => stream.id === id);
+    const stream = streams.find(stream => +stream.id === +id);
     const [day, time] = stream.date.split('-');
     const coach = getCoach(stream, profiles);
 

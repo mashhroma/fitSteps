@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { getCoach } from '../modules/workoutsFunctions';
 
 export default function StreamPreview({ stream, width = 400, height = 500 }) {
-    const profiles = useContext(ProfilesContext);
+    const { profiles } = useContext(ProfilesContext);
     const [date, time] = stream.date.split('-');
     const coach = getCoach(stream, profiles);
 

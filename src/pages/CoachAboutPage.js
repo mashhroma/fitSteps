@@ -1,9 +1,28 @@
 import { Link } from "react-router-dom";
+import { ActiveCoachContext } from "../contexts/ContextProvider";
+import { useContext } from "react";
 
 export default function CoachAboutPage({ toggleCoachRegForm, toggleCoachLoginForm }) {
+    const [activeCoach, setActiveCoach] = useContext(ActiveCoachContext);
+
+    const removeActiveCoach = () => {
+        if (activeCoach) {
+            localStorage.removeItem('activeCoach');
+            setActiveCoach(null);
+        }
+    };
+
     return (
         <section className="text">
-            <div className="coach coach__button"><button className="button" onClick={toggleCoachLoginForm}>Войти в личный кабинет</button></div>
+            {activeCoach ?
+                <div className="coach coach__button">
+                    <Link to={`/profiles/${activeCoach.id}`}><h3>Страница тренера: {activeCoach.name} {activeCoach.surname}</h3></Link>
+                    <button className='button' onClick={removeActiveCoach}>выйти</button>
+                </div> :
+                <div className="coach coach__button">
+                    <button className="button" onClick={toggleCoachLoginForm}>Войти в личный кабинет</button>
+                </div>}
+
             <div className="coach coach__banner">
                 <ul>
                     <li>Удобная площадка</li>

@@ -3,7 +3,7 @@ import { ActiveCoachContext, ActiveUserContext, ProfilesContext } from "../conte
 import { findProfile, getProfileDataFromForm, isFormCorrect, isPasswordCorrect } from "../modules/formModules";
 
 export default function LoginForm({ role, closeLoginForm }) {
-    const profiles = useContext(ProfilesContext);
+    const { profiles } = useContext(ProfilesContext);
     const [activeUser, setActiveUser] = useContext(ActiveUserContext);
     const [activeCoach, setActiveCoach] = useContext(ActiveCoachContext);
     const [message, setMessage] = useState('');

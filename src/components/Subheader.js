@@ -1,7 +1,6 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
 
-export default function Title() {
+export default function Subheader() {
     const { pathname } = useLocation();
     const clear = pathname.split('/')[1];
     let title = '';
@@ -36,6 +35,9 @@ export default function Title() {
         case 'users':
             title = 'Страница пользователя';
             break;
+        case 'profiles':
+            title = 'Страница тренера';
+            break;
         case 'coaches':
             title = 'Страница тренера';
             break;
@@ -63,6 +65,8 @@ export default function Title() {
     }
 
     return (
-        <h1 className="subheader__title">{title}</h1>
+        <div className='subheader'>
+            <h1 className="subheader__title">{title}</h1>
+        </div>
     )
 }

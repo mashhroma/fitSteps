@@ -455,15 +455,20 @@
         {
             "id": "1",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Тихон",
             "patronymic": "Константинович",
             "surname": "Панин",
             "email": "panin@mail.ru",
+            "balance": 500,
             "password": "12345"
         },
         {
             "id": "2",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Максим",
             "patronymic": "Станиславович",
             "surname": "Овсянников",
@@ -473,6 +478,8 @@
         {
             "id": "3",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Роман",
             "patronymic": "Романович",
             "surname": "Романов",
@@ -482,6 +489,8 @@
         {
             "id": "4",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Анна",
             "patronymic": "Марковна",
             "surname": "Молчанова",
@@ -491,6 +500,8 @@
         {
             "id": "5",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Алиса",
             "patronymic": "Кирилловна",
             "surname": "Сомова",
@@ -500,6 +511,8 @@
         {
             "id": "6",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Артём",
             "patronymic": "Константинович",
             "surname": "Соколов",
@@ -509,6 +522,8 @@
         {
             "id": "7",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Марк",
             "patronymic": "Дмитриевич",
             "surname": "Смирнов",
@@ -518,6 +533,8 @@
         {
             "id": "8",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Степан",
             "patronymic": "Александрович",
             "surname": "Воронцов",
@@ -527,6 +544,8 @@
         {
             "id": "9",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Максим",
             "patronymic": "Иванович",
             "surname": "Селиванов",
@@ -536,6 +555,8 @@
         {
             "id": "10",
             "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
             "name": "Егор",
             "patronymic": "Львович",
             "surname": "Ефремов",
@@ -549,10 +570,13 @@
             "name": "Мария",
             "patronymic": "Александровна",
             "surname": "Савкина",
-            "birthday": "11.05.1985",
-            "about": "Some information",
+            "birthday": "1985-05-11",
+            "about": "Я обожаю фитнес",
             "workoutTypes": [],
-            "favorites": [],
+            "favorites": [
+                109,
+                106
+            ],
             "email": "mashh@mail.ru",
             "password": "12345",
             "subscribe": {
@@ -561,6 +585,90 @@
                 "startDate": null,
                 "endDate": null
             }
+        },
+        {
+            "id": "12",
+            "role": "user",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Напишите немного о себе",
+            "name": "Андрей",
+            "surname": "Любимый",
+            "email": "deffma@mail.ru",
+            "password": "12345",
+            "checkPassword": "12345",
+            "favorites": [],
+            "subscribe": {
+                "isActive": false,
+                "type": null,
+                "startDate": null,
+                "endDate": null
+            }
+        },
+        {
+            "id": "13",
+            "role": "user",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Напишите немного о себе",
+            "name": "Лана",
+            "surname": "Ланина",
+            "email": "lano4ka@mail.ru",
+            "password": "12345",
+            "checkPassword": "12345",
+            "favorites": [],
+            "subscribe": {
+                "isActive": false,
+                "type": null,
+                "startDate": null,
+                "endDate": null
+            }
+        },
+        {
+            "id": "14",
+            "role": "user",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Напишите немного о себе",
+            "name": "Лана",
+            "surname": "Ланина",
+            "email": "cretonit@gmail.com",
+            "password": "12345",
+            "checkPassword": "12345",
+            "favorites": [],
+            "subscribe": {
+                "isActive": false,
+                "type": null,
+                "startDate": null,
+                "endDate": null
+            }
+        },
+        {
+            "id": "15",
+            "role": "user",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Напишите немного о себе",
+            "name": "Лана",
+            "surname": "Савкина",
+            "email": "info@ituma.ru",
+            "password": "12345",
+            "checkPassword": "12345",
+            "favorites": [],
+            "subscribe": {
+                "isActive": false,
+                "type": null,
+                "startDate": null,
+                "endDate": null
+            }
+        },
+        {
+            "id": "16",
+            "role": "coach",
+            "avatar": "/images/default_avatar.webp",
+            "about": "Отличный тренер",
+            "name": "Алена",
+            "surname": "Савкина",
+            "email": "cretonit@gmail.com",
+            "password": "12345",
+            "checkPassword": "12345",
+            "balance": 500
         }
     ]
 }

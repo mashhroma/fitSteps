@@ -4,14 +4,14 @@ import { DataContext } from "../contexts/ContextProvider";
 import StreamPreview from "../components/StreamPreview";
 
 export default function Streams() {
-    const { articles } = useContext(DataContext);
+    const { streams } = useContext(DataContext);
 
     return (
         <section>
-            <Breadcrumbs items={articles} />
+            <Breadcrumbs items={streams} />
             <div className="content">
                 <ul className='workouts'>
-                    {articles.map(stream => <li key={stream.id}><StreamPreview stream={stream} /></li>)}
+                    {streams.map(stream => <li key={stream.id}><StreamPreview stream={stream} /></li>)}
                 </ul>
             </div>
         </section>

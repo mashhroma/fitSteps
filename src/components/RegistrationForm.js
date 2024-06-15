@@ -4,7 +4,7 @@ import { findProfile, getProfileDataFromForm, isFormCorrect } from "../modules/f
 import axios from "axios";
 
 export default function RegistrationForm({ role, closeRegForm }) {
-    const profiles = useContext(ProfilesContext);
+    const { profiles, setProfiles } = useContext(ProfilesContext);
     const [message, setMessage] = useState('');
 
     const createUser = (e) => {
@@ -29,6 +29,7 @@ export default function RegistrationForm({ role, closeRegForm }) {
             }
             else {
                 axios.post(`https://66598df5de346625136ceaa4.mockapi.io/profiles/`, newProfile);
+                setProfiles([...profiles, newProfile])
                 setMessage('ВЫ УСПЕШНО ЗАРЕГИСТРИРОВАЛИСЬ!');
                 setTimeout(() => {
                     closeRegForm();
