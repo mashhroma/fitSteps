@@ -16,4 +16,4 @@
 - Возможность редактирования полей с данными о пользователе и тренере
 - Возможность добавить в избранное понравившихся онлайн-занятий.
 
-Текст дипломной работы: [ссылка на googleDocs](https://docs.google.com/document/d/13lAjjDPCLfAzn9BxaJFKXgtMNElXTSiF/edit?usp=sharing&ouid=116076268804126537623&rtpof=true&sd=true) .
+Текст дипломной работы: <a href="https://docs.google.com/document/d/13lAjjDPCLfAzn9BxaJFKXgtMNElXTSiF/edit?usp=sharing&ouid=116076268804126537623&rtpof=true&sd=true" target="blank">ссылка на googleDocs</a>
