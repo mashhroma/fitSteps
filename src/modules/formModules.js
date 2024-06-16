@@ -56,3 +56,4 @@ const isPasswordCorrect = (profile, password) => {
 };
 
 export { isFormCorrect, getProfileDataFromForm, findProfile, isPasswordCorrect, createProfile };
+

@@ -22,3 +22,4 @@ export default function ArticlePreview({ article, width = 800, height = 600 }) {
         </article>
     );
 }
+

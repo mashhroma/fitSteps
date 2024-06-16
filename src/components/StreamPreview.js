@@ -25,3 +25,4 @@ export default function StreamPreview({ stream, width = 400, height = 500 }) {
         </article>
     );
 }
+

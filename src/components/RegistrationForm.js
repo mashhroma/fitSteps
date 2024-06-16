@@ -60,3 +60,4 @@ export default function RegistrationForm({ role, closeRegForm }) {
         </form>
     )
 }
+

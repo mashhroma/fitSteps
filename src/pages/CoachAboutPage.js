@@ -56,3 +56,4 @@ export default function CoachAboutPage({ toggleCoachRegForm, toggleCoachLoginFor
         </section>
     )
 }
+

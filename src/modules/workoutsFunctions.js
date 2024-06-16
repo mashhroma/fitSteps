@@ -86,3 +86,5 @@ const toggleFavorite = (activeUser, workoutId) => {
 }
 
 export { getTypePath, getScheduleHTML, getCoach, getDescription, getClosestStreamDate, renderFavorite, toggleFavorite };
+
+

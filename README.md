@@ -16,4 +16,7 @@
 - Возможность редактирования полей с данными о пользователе и тренере
 - Возможность добавить в избранное понравившихся онлайн-занятий.
 
-Текст дипломной работы: <a href="https://docs.google.com/document/d/13lAjjDPCLfAzn9BxaJFKXgtMNElXTSiF/edit?usp=sharing&ouid=116076268804126537623&rtpof=true&sd=true" target="_blank">ссылка на googleDocs</a>
+Текст дипломной работы:
+- <a href="https://docs.google.com/document/d/13lAjjDPCLfAzn9BxaJFKXgtMNElXTSiF/edit?usp=sharing&ouid=116076268804126537623&rtpof=true&sd=true" target="_blank">Ссылка на googleDocs</a>
+- [В формате word](Дипломная%20работа_Савкина_МА.docx)
+- [В формате pdf](Дипломная%20работа_Савкина_МА.docx.pdf)

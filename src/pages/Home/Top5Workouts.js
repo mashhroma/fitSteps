@@ -16,3 +16,4 @@ export default function Top5Workouts({ workouts }) {
         </div>
     )
 }
+
