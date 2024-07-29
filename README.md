@@ -1,3 +1,7 @@
+# Посетите сайт: <a style="color: #94d933" href="https://fitsteps.vercel.app/" target="_blank">fitsteps.vercel.app</a>
+
+<hr>
+
 # Проект по дипломной работе в рамках итоговой аттестации по курсу "Frontend-разработка (React)"
 
 ## Web-приложение FitSteps
